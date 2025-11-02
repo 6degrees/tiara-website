@@ -1558,6 +1558,8 @@ blockquote {
   text-decoration: none;
   display: flex;
   position: relative;
+  width: 100%;
+  max-width: 100%;
 }
 
 .product-list-item-link.full-height {
@@ -1572,14 +1574,14 @@ blockquote {
 }
 
 .product-thumbnail.small {
-  width: 460px;
+  width: 100%;
+  max-width: 460px;
 }
 
 .home-section-03 .product-thumbnail {
-  width: 500px;
-  height: 728px;
-  min-width: 500px;
+  width: 100%;
   max-width: 500px;
+  height: 728px;
   min-height: 728px;
   max-height: 728px;
   object-fit: cover;
@@ -2625,6 +2627,8 @@ blockquote {
 
 .zoom-wrap {
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .mobile-menu-wrap {
@@ -2724,7 +2728,7 @@ blockquote {
   }
 
   .home-section-01-right {
-    background-image: linear-gradient(#00000080, #0000 20%), url('../images/orla8.webp');
+    background-image: linear-gradient(#00000080, #0000 20%), url('../images/Visual-2-p-800.png');
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -2890,10 +2894,9 @@ blockquote {
   }
 
   .home-section-03 .product-thumbnail {
-    width: 398px;
-    height: 580px;
-    min-width: 398px;
+    width: 100%;
     max-width: 398px;
+    height: 580px;
     min-height: 580px;
     max-height: 580px;
   }
@@ -3404,11 +3407,18 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
+  .home-section-01-right {
+    background-image: linear-gradient(#00000080, #0000 20%), url('../images/Visual-2-p-500.png');
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
   .home-section-03 .product-thumbnail {
-    width: 302px;
+    width: 100%;
+    max-width: 100%;
     height: 440px;
-    min-width: 302px;
-    max-width: 302px;
     min-height: 440px;
     max-height: 440px;
   }
