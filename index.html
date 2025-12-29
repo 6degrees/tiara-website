@@ -12,7 +12,14 @@
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="theme-color" content="#efe0cb">
+  <meta name="color-scheme" content="light">
   <meta content="Webflow" name="generator">
+  <!-- Resource Hints -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+  <!-- Stylesheets -->
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/tiara-a06d9a.webflow.css" rel="stylesheet" type="text/css">
@@ -21,8 +28,11 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
+  <!-- Preload critical resources -->
+  <link rel="preload" href="fonts/Houstiq.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="fonts/Inter_18pt-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <style>
 * {
   box-sizing: border-box;
@@ -65,9 +75,50 @@ img {
 .home-section-03 .product-hover {
   display: none !important;
 }
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background: var(--brown);
+  color: var(--beige);
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+}
 </style>
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Tiara Beauty",
+    "description": "At Tiara, beauty is a ritual. We offer refined salon and spa experiences designed to restore, enhance, and elevate your natural elegance.",
+    "url": "https://tiarabeauty.com",
+    "logo": "https://tiarabeauty.com/images/Tiara-Logo.png",
+    "image": "https://tiarabeauty.com/images/hero.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Al Khobar",
+      "addressCountry": "SA"
+    },
+    "priceRange": "$$$",
+    "areaServed": {
+      "@type": "City",
+      "name": "Al Khobar"
+    }
+  }
+  </script>
 </head>
 <body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <!-- Header Section - Navigation menu and site logo -->
   <div data-w-id="3ec8e2e1-52f1-449a-bc76-07c36771a604" class="header">
     <div class="menu">
@@ -150,6 +201,7 @@ img {
       </div>
     </div>
   </div>
+  <main id="main-content">
   <!-- Hero Section - Main landing section with background image and main heading -->
   <section data-w-id="f039517b-655e-1c32-c063-eaa661eb7077" style="opacity:0" class="home-section-01">
     <div class="home-section-container">
@@ -192,28 +244,28 @@ img {
   <section id="services" class="home-section-03">
     <div class="product-list">
       <div data-w-id="caccc337-8d7c-4486-f9e8-932543e8e3cd" class="product-list-item-link">
-        <div data-w-id="caccc337-8d7c-4486-f9e8-932543e8e3ce" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/service4.png 500w, images/services/service4.png 507w" alt="Facial Treatments Service" src="images/services/service4.png" class="product-thumbnail">
+        <div data-w-id="caccc337-8d7c-4486-f9e8-932543e8e3ce" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/freepik__img1-transform-the-woman-in-the-input-image-into-a__61634.png 500w, images/services/freepik__img1-transform-the-woman-in-the-input-image-into-a__61634.png 507w" alt="Facial Treatments Service" src="images/services/freepik__img1-transform-the-woman-in-the-input-image-into-a__61634.png" class="product-thumbnail">
         <div class="product-text-group">
           <div class="text--body-large title">Facial Treatments</div>
         </div>
         <div data-w-id="caccc337-8d7c-4486-f9e8-932543e8e3d5" class="product-button"></div>
       </div>
       <div data-w-id="ea8940b5-8c2f-e627-8acf-06c0b2ba0810" class="product-list-item-link">
-        <div data-w-id="ea8940b5-8c2f-e627-8acf-06c0b2ba0811" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/service4.png 500w, images/services/service4.png 507w" alt="Hair Styling Service" src="images/services/service4.png" class="product-thumbnail">
+        <div data-w-id="ea8940b5-8c2f-e627-8acf-06c0b2ba0811" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/freepik__img1-change-hair-color-to-black__61632.png 500w, images/services/freepik__img1-change-hair-color-to-black__61632.png 507w" alt="Hair Styling Service" src="images/services/freepik__img1-change-hair-color-to-black__61632.png" class="product-thumbnail">
         <div class="product-text-group">
           <div class="text--body-large title">Hair Styling</div>
         </div>
         <div data-w-id="ea8940b5-8c2f-e627-8acf-06c0b2ba0818" class="product-button"></div>
       </div>
       <div data-w-id="7947be55-e2da-447f-9b44-3702ebbdbc34" class="product-list-item-link">
-        <div data-w-id="7947be55-e2da-447f-9b44-3702ebbdbc35" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/service4.png 500w, images/services/service4.png 507w" alt="Spa Therapies Service" src="images/services/service4.png" class="product-thumbnail">
+        <div data-w-id="7947be55-e2da-447f-9b44-3702ebbdbc35" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/freepik__img1-transform-the-woman-in-the-input-image-into-a__61637.png 500w, images/services/freepik__img1-transform-the-woman-in-the-input-image-into-a__61637.png 507w" alt="Spa Therapies Service" src="images/services/freepik__img1-transform-the-woman-in-the-input-image-into-a__61637.png" class="product-thumbnail">
         <div class="product-text-group">
           <div class="text--body-large title">Spa Therapies</div>
         </div>
         <div data-w-id="7947be55-e2da-447f-9b44-3702ebbdbc3c" class="product-button"></div>
       </div>
       <div data-w-id="8acfc674-1ce6-68d2-79fe-c13fa1c8a3c0" class="product-list-item-link">
-        <div data-w-id="8acfc674-1ce6-68d2-79fe-c13fa1c8a3c1" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/service4.png 500w, images/services/service4.png 507w" alt="Beauty Rituals Service" src="images/services/service4.png" class="product-thumbnail">
+        <div data-w-id="8acfc674-1ce6-68d2-79fe-c13fa1c8a3c1" class="text-label"><strong>OUR RITUAL SERVICES</strong></div><img loading="lazy" sizes="(max-width: 507px) 100vw, 507px" srcset="images/services/freepik__img1-apply-a-fineart-royal-mood-with-soft-muted-to__61640.png 500w, images/services/freepik__img1-apply-a-fineart-royal-mood-with-soft-muted-to__61640.png 507w" alt="Beauty Rituals Service" src="images/services/freepik__img1-apply-a-fineart-royal-mood-with-soft-muted-to__61640.png" class="product-thumbnail">
         <div class="product-text-group">
           <div class="text--body-large title">Beauty Rituals</div>
         </div>
@@ -221,54 +273,54 @@ img {
       </div>
     </div>
   </section>
-  <!-- Philosophy/Materials Section - Tabbed section showcasing Tiara's values (Calm, Balance, Authenticity) -->
+  <!-- Philosophy/Salon & Spa Section - Tabbed section showcasing Tiara's salon and spa experience -->
   <section class="home-section-04">
     <div class="home-section-04-container">
-      <div data-current="Tab 3" data-easing="ease" data-duration-in="300" data-duration-out="100" class="image-tab w-tabs">
+      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="image-tab w-tabs">
         <div class="image-tab-right w-tab-menu">
-          <a data-w-tab="Tab 1" class="image-tab-link w-inline-block w-tab-link"><img sizes="(max-width: 479px) 87vw, (max-width: 727px) 91vw, 662px" srcset="images/philosophy/Visual 3.png 500w, images/philosophy/Visual 3.png 662w" alt="Calm" src="images/philosophy/Visual 3.png" loading="lazy" class="image-tab-thumbnail">
-            <div class="text-label image-tab-link"><strong>CALM</strong></div>
+          <a data-w-tab="Tab 1" class="image-tab-link w-inline-block w-tab-link w--current"><img sizes="(max-width: 479px) 87vw, (max-width: 727px) 91vw, 662px" srcset="images/salon-spa/1.png 500w, images/salon-spa/1.png 662w" alt="Tiara Salon - Facial Treatment Area" src="images/salon-spa/1.png" loading="lazy" class="image-tab-thumbnail">
+            <div class="text-label image-tab-link"><strong>FACIALS</strong></div>
           </a>
-          <a data-w-tab="Tab 2" class="image-tab-link w-inline-block w-tab-link"><img loading="lazy" src="images/philosophy/Visual 4.png" alt="Balance" class="image-tab-thumbnail">
-            <div class="text-label image-tab-link">BALANCE</div>
+          <a data-w-tab="Tab 2" class="image-tab-link w-inline-block w-tab-link"><img loading="lazy" sizes="(max-width: 661px) 100vw, 661px" srcset="images/salon-spa/2.png 500w, images/salon-spa/2.png 661w" alt="Tiara Salon - Hair Styling Area" src="images/salon-spa/2.png" class="image-tab-thumbnail">
+            <div class="text-label image-tab-link"><strong>STYLING</strong></div>
           </a>
-          <a data-w-tab="Tab 3" class="image-tab-link w-inline-block w-tab-link w--current"><img sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1445px) 96vw, 1388px" srcset="images/philosophy/Visual 5.png 500w, images/philosophy/Visual 5.png 800w, images/philosophy/Visual 5.png 1080w, images/philosophy/Visual 5.png 1388w" alt="Authenticity" src="images/philosophy/Visual 5.png" loading="lazy" class="image-tab-thumbnail">
-            <div class="text-label image-tab-link"><strong>AUTHENTICITY</strong></div>
+          <a data-w-tab="Tab 3" class="image-tab-link w-inline-block w-tab-link"><img sizes="(max-width: 479px) 87vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, (max-width: 1445px) 96vw, 1388px" srcset="images/salon-spa/3.png 500w, images/salon-spa/3.png 800w, images/salon-spa/3.png 1080w, images/salon-spa/3.png 1388w" alt="Tiara Spa - Interior Space" src="images/salon-spa/3.png" loading="lazy" class="image-tab-thumbnail">
+            <div class="text-label image-tab-link"><strong>SPA</strong></div>
           </a>
         </div>
         <div class="image-tab-left w-tab-content">
-          <div data-w-tab="Tab 1" class="image-tab-contetns w-tab-pane">
+          <div data-w-tab="Tab 1" class="image-tab-contetns w-tab-pane w--tab-active">
             <div class="image-tab-inner">
-              <div class="image-tab-inner-left"><img sizes="100vw" srcset="images/philosophy/Visual 3.png 500w, images/philosophy/Visual 3.png 662w" alt="Calm - Tiara Philosophy" src="images/philosophy/Visual 3.png" loading="lazy" class="tab-img"></div>
+              <div class="image-tab-inner-left"><img sizes="100vw" srcset="images/salon-spa/1.png 500w, images/salon-spa/1.png 662w, images/salon-spa/1.png 800w, images/salon-spa/1.png 1080w" alt="Tiara Salon - Facial Treatment Space" src="images/salon-spa/1.png" loading="lazy" class="tab-img"></div>
               <div class="image-tab-inner-right">
-                <div class="text-label image-tab-title"><strong>PHILOSOPHY</strong></div>
+                <div class="text-label image-tab-title"><strong>SALON</strong></div>
                 <div class="image-tab-text-group">
-                  <h1 class="text--heading-01"><strong>THE RITUAL OF CARE</strong></h1>
-                  <p class="text--body-large">Beauty, in Tiara’s world, grows quietly under the shade of care.Each product, touch, and detail is crafted to restore balance — honoring the beauty that already exists within you.</p>
+                  <h1 class="text--heading-01"><strong>LIGHT-FILLED SANCTUARY</strong></h1>
+                  <p class="text--body-large">Our facial treatment space welcomes you with abundant natural light streaming through large windows. The carefully organized shelves display our premium products, while mirrors reflect the serene atmosphere—a corner where renewal and radiance meet.</p>
                 </div>
               </div>
             </div>
           </div>
           <div data-w-tab="Tab 2" class="image-tab-contetns w-tab-pane">
             <div class="image-tab-inner">
-              <div class="image-tab-inner-left"><img loading="lazy" src="images/philosophy/Visual 4.png" alt="Balance - Tiara Philosophy" class="tab-img"></div>
+              <div class="image-tab-inner-left"><img loading="lazy" sizes="100vw" srcset="images/salon-spa/2.png 500w, images/salon-spa/2.png 661w, images/salon-spa/2.png 800w, images/salon-spa/2.png 1080w" alt="Tiara Salon - Styling Lounge Area" src="images/salon-spa/2.png" class="tab-img"></div>
               <div class="image-tab-inner-right">
-                <div class="text-label image-tab-title">MATERIAL</div>
+                <div class="text-label image-tab-title"><strong>SALON</strong></div>
                 <div class="image-tab-text-group">
-                  <h1 class="text--heading-01">Life grown in silence</h1>
-                  <p class="text--body-large">Sourced from untouched highlands and forests, these wild herbs bring raw vitality, soothing the skin and protecting it from external stressors.</p>
+                  <h1 class="text--heading-01">INTIMATE ELEGANCE</h1>
+                  <p class="text--body-large">In our styling lounge, light wooden chairs surround a central table adorned with fresh flowers. The soft, intimate lighting creates a welcoming atmosphere where conversations flow and personal style is discovered. Every detail invites you to pause and feel at home.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div data-w-tab="Tab 3" class="image-tab-contetns w-tab-pane w--tab-active">
+          <div data-w-tab="Tab 3" class="image-tab-contetns w-tab-pane">
             <div class="image-tab-inner">
-              <div class="image-tab-inner-left"><img sizes="(max-width: 1388px) 100vw, 1388px" srcset="images/philosophy/Visual 5.png 500w, images/philosophy/Visual 5.png 800w, images/philosophy/Visual 5.png 1080w, images/philosophy/Visual 5.png 1388w" alt="Authenticity - Tiara Philosophy" src="images/philosophy/Visual 5.png" loading="lazy" class="tab-img"></div>
+              <div class="image-tab-inner-left"><img sizes="100vw" srcset="images/salon-spa/3.png 500w, images/salon-spa/3.png 800w, images/salon-spa/3.png 1080w, images/salon-spa/3.png 1388w" alt="Tiara Spa - Relaxation Space" src="images/salon-spa/3.png" loading="lazy" class="tab-img"></div>
               <div class="image-tab-inner-right">
-                <div class="text-label image-tab-title">MATERIAL</div>
+                <div class="text-label image-tab-title"><strong>SPA</strong></div>
                 <div class="image-tab-text-group">
-                  <h1 class="text--heading-01">Water that remembers the earth</h1>
-                  <p class="text--body-large">Filtered slowly through layers of earth, this spring water is naturally purified over centuries. It deeply hydrates and calms the skin with nature’s flow.</p>
+                  <h1 class="text--heading-01">SERENE HORIZONS</h1>
+                  <p class="text--body-large">Our spa relaxation area offers comfortable recliners positioned to face expansive windows, framing views of water and landscape beyond. This tranquil corner invites deep rest, where the boundary between interior comfort and natural beauty dissolves into perfect peace.</p>
                 </div>
               </div>
             </div>
@@ -290,28 +342,29 @@ img {
         <div class="journal-list">
           <div class="journal-item">
             <div class="journal-link">
-              <div class="zoom-wrap"><img src="images/products/product.png" loading="lazy" sizes="100vw" srcset="images/products/product.png 500w, images/products/product.png 800w, images/products/product.png 1080w, images/products/product.png 1600w, images/products/product.png 2000w" alt="Tiara Product" class="zoom-image _1-1"></div>
+              <div class="zoom-wrap"><img src="images/products/lashes-box.png" loading="lazy" sizes="100vw" srcset="images/products/lashes-box.png 500w, images/products/lashes-box.png 800w, images/products/lashes-box.png 1080w, images/products/lashes-box.png 1600w, images/products/lashes-box.png 2000w" alt="Tiara Lashes Product" class="zoom-image _1-1"></div>
             </div>
           </div>
           <div class="journal-item">
             <div class="journal-link">
-              <div class="zoom-wrap"><img src="images/products/product.png" loading="lazy" sizes="100vw" srcset="images/products/product.png 500w, images/products/product.png 800w, images/products/product.png 1080w, images/products/product.png 1600w, images/products/product.png 2000w" alt="Tiara Product" class="zoom-image _1-1"></div>
+              <div class="zoom-wrap"><img src="images/products/glue-box.png" loading="lazy" sizes="100vw" srcset="images/products/glue-box.png 500w, images/products/glue-box.png 800w, images/products/glue-box.png 1080w, images/products/glue-box.png 1600w, images/products/glue-box.png 2000w" alt="Tiara Glue Product" class="zoom-image _1-1"></div>
             </div>
           </div>
           <div class="journal-item">
             <div class="journal-link">
-              <div class="zoom-wrap"><img src="images/products/product.png" loading="lazy" sizes="100vw" srcset="images/products/product.png 500w, images/products/product.png 800w, images/products/product.png 1080w, images/products/product.png 1600w, images/products/product.png 2000w" alt="Tiara Product" class="zoom-image _1-1"></div>
+              <div class="zoom-wrap"><img src="images/products/glue-remover-box.png" loading="lazy" sizes="100vw" srcset="images/products/glue-remover-box.png 500w, images/products/glue-remover-box.png 800w, images/products/glue-remover-box.png 1080w, images/products/glue-remover-box.png 1600w, images/products/glue-remover-box.png 2000w" alt="Tiara Glue Remover Product" class="zoom-image _1-1"></div>
             </div>
           </div>
           <div class="journal-item">
             <div class="journal-link">
-              <div class="zoom-wrap"><img src="images/products/product.png" loading="lazy" sizes="100vw" srcset="images/products/product.png 500w, images/products/product.png 800w, images/products/product.png 1080w, images/products/product.png 1600w, images/products/product.png 2000w" alt="Tiara Product" class="zoom-image _1-1"></div>
+              <div class="zoom-wrap"><img src="images/products/lash-shampo-box.png" loading="lazy" sizes="100vw" srcset="images/products/lash-shampo-box.png 500w, images/products/lash-shampo-box.png 800w, images/products/lash-shampo-box.png 1080w, images/products/lash-shampo-box.png 1600w, images/products/lash-shampo-box.png 2000w" alt="Tiara Lash Shampoo Product" class="zoom-image _1-1"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  </main>
   <!-- Footer Section - Site navigation, links, and copyright information -->
   <div class="footer">
     <div class="footer-container">
@@ -351,5 +404,16 @@ img {
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68ecf567675f41f17af4bafb" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+    // Add scrolled class to header on scroll
+    window.addEventListener('scroll', function() {
+      const headerContainer = document.querySelector('.header-container');
+      if (window.scrollY > 50) {
+        headerContainer.classList.add('scrolled');
+      } else {
+        headerContainer.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>

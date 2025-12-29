@@ -1,0 +1,110 @@
+---
+alwaysApply: true
+---
+
+# Tiara Beauty Website
+
+## Brand Identity
+
+Tiara Beauty is a Saudi-born beauty brand built on the belief that beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, Tiara creates experiences that honor the mind, body, and spirit—offering beauty that is felt as much as it is seen.
+
+Evolving from a highly regarded salon and spa in Al Khobar, Tiara Beauty is redefining modern beauty through a philosophy of timeless elegance, clean innovation, and refined rituals. The brand blends global standards with cultural pride, delivering expert-led services and thoughtfully designed experiences that prioritize long-term care over fast trends.
+
+At its core, Tiara Beauty stands for quiet confidence and modern sovereignty—where self-care is elevated into meaningful rituals and personal well-being is treated with reverence. Through its masterbrand approach, Tiara is designed to grow seamlessly across services, products, and lifestyle extensions, while remaining grounded in a consistent emotional identity: calm, intentional, nurturing, and culturally rooted.
+
+Tiara Beauty is not just a place or a service—it is a living brand system that crowns individuals through care, presence, and purpose, positioning Saudi elegance for the world.
+
+## Website Overview
+
+This is a static website built from a Webflow export, showcasing Tiara Beauty's brand, services, products, and philosophy. The site emphasizes elegant design, refined aesthetics, and a premium user experience that reflects the brand's commitment to ritual and intentional care.
+
+## Technical Stack
+
+- **Platform**: Static HTML/CSS/JavaScript (Webflow export)
+- **Development Server**: http-server (Node.js)
+- **Port**: 3004
+- **Styling**: Custom CSS with CSS variables for brand colors
+- **Typography**: 
+  - Houstiq (serif, brand font)
+  - BDOGrotesk VF (sans-serif, variable font)
+
+## Website Structure
+
+### Pages
+- **index.html** - Homepage with hero, services, philosophy, and products sections
+- **about.html** - About page featuring brand story, identity, and team artisans
+- **contact.html** - Contact page with location information and booking options
+- **privacy-policy.html** - Privacy policy page
+- **404.html** - Custom 404 error page
+
+### Homepage Sections (index.html)
+1. **Hero Section** - Split-screen layout with brand imagery and tagline "THE RITUAL OF BEING CROWNED"
+2. **About/Ritual Section** - Introduction to Tiara's philosophy and story
+3. **Services Section** - Four service offerings (Facial Treatments, Hair Styling, Spa Therapies, Beauty Rituals)
+4. **Philosophy Section** - Tabbed content showcasing brand values (Calm, Balance, Authenticity)
+5. **Products Section** - Product gallery featuring beauty products (lashes, glue, glue remover, lash shampoo)
+
+### About Page Sections
+1. **Hero Section** - "ABOUT TIARA BEAUTY" with hero background
+2. **Introduction Section** - Brand mission and values
+3. **Root of Identity Section** - Visual storytelling with banana tree imagery
+4. **Team Section** - "Meet the Tiara Artisans" with black and white team photos
+
+## Brand Design System
+
+### Color Palette
+- **Primary Colors (Soft Foundation)**:
+  - Velvet Cream: `#efe0cb`
+  - Soft Beige: `#efe9dd`
+- **Secondary Color (Touch of Heritage)**:
+  - Royal Cocoa: `#3f2823`
+- **Accent Colors**:
+  - Deep Velvet Green (Crown of Nature): `#142821`
+  - Vintage Wine (Silent Luxury Red): `#500b0c`
+
+### Typography
+- **Headings**: Houstiq (elegant serif)
+- **Body Text**: BDOGrotesk VF (clean sans-serif)
+- **Labels**: Small uppercase text for navigation and section labels
+
+### Visual Elements
+- **Logo Variants**: White logo for dark backgrounds, dark logo for light backgrounds
+- **Icons**: Custom SVG icons for navigation and UI elements
+- **Imagery**: High-quality photography with intentional use of black and white for team section
+- **Layout**: Split-screen designs, elegant spacing, refined grid systems
+
+## Key Features
+
+- **Responsive Design**: Mobile-first approach with breakpoints for tablet and desktop
+- **Menu Overlay**: Elegant full-screen navigation with brand messaging
+- **Image Optimization**: Responsive image sets with multiple sizes for performance
+- **Brand Consistency**: CSS variables ensure consistent color usage across all pages
+- **Accessibility**: Semantic HTML structure and proper alt text for images
+
+## Development
+
+### Running the Project
+```bash
+npm start  # Starts development server on port 3004
+npm run dev  # Alternative command (same as start)
+```
+
+### File Organization
+- `/css` - Stylesheets (normalize, webflow base, custom Tiara styles)
+- `/images` - All brand assets, photos, icons, and product images
+- `/fonts` - Custom brand fonts (Houstiq, BDOGrotesk)
+- `/js` - JavaScript files (Webflow interactions)
+
+### Important Notes
+- The site uses CSS custom properties (variables) for brand colors defined in `:root`
+- Team images are displayed in grayscale via CSS filter
+- Product and service images are organized in dedicated subdirectories
+- All pages share consistent header and footer components
+
+## Brand Messaging
+
+**Core Tagline**: "Beauty as Ritual"
+
+**Key Message**: "At Tiara, beauty is not applied — it is refined. Each ritual is shaped by trained hands, quiet intention, and elements chosen to honor the skin and the spirit."
+
+**Brand Values**: Calm, intentional, nurturing, culturally rooted, timeless elegance

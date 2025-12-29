@@ -1,0 +1,231 @@
+---
+alwaysApply: true
+---
+
+# Technical Context: Environment Specification
+
+## Technology Stack
+
+### Core Technologies
+
+- **HTML5**: Semantic markup for all pages
+- **CSS3**: Custom styling with CSS variables, flexbox, grid
+- **JavaScript (ES5/ES6)**: Webflow interactions and minimal custom scripts
+- **Node.js**: Development server runtime
+
+### Development Tools
+
+- **http-server**: Static file server for local development
+  - Version: ^14.1.1
+  - Port: 3004
+  - Command: `npm start` or `npm run dev`
+
+### Build & Deployment
+
+- **Build System**: None (static site, no build process required)
+- **Package Manager**: npm
+- **Deployment**: Static file hosting (no specific platform required)
+
+## Development Environment
+
+### Local Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+# Server runs on http://localhost:3004
+```
+
+### File Structure
+
+```
+tiara-website/
+├── css/
+│   ├── normalize.css          # Browser reset
+│   ├── webflow.css            # Webflow base styles
+│   └── tiara-a06d9a.webflow.css  # Custom Tiara styles
+├── fonts/
+│   ├── Houstiq.otf            # Brand serif font
+│   └── BDOGrotesk-VF.ttf      # Variable sans-serif font
+├── images/
+│   ├── products/              # Product images
+│   ├── services/              # Service images
+│   ├── team/                  # Team photos
+│   ├── philosophy/            # Philosophy visuals
+│   └── [brand assets]         # Logos, icons, hero images
+├── js/
+│   └── webflow.js            # Webflow interactions
+├── index.html                 # Homepage
+├── about.html                 # About page
+├── contact.html               # Contact page
+├── privacy-policy.html        # Privacy policy
+├── 404.html                  # Error page
+└── package.json               # Project configuration
+```
+
+## Dependencies
+
+### Production Dependencies
+None (static site)
+
+### Development Dependencies
+
+```json
+{
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+```
+
+## Browser Compatibility
+
+- **Modern Browsers**: Chrome, Firefox, Safari, Edge (latest versions)
+- **Mobile Browsers**: iOS Safari, Chrome Mobile
+- **CSS Features**: CSS Grid, Flexbox, CSS Variables, Filters
+- **JavaScript**: ES5 compatible (Webflow interactions)
+
+## Performance Considerations
+
+### Image Optimization
+
+- **Formats**: PNG, JPG, WebP, SVG
+- **Responsive Images**: srcset attributes for multiple sizes
+- **Current Issue**: Some team images are large (2-6MB) and could be optimized
+- **Recommendation**: Consider image compression for production
+
+### Loading Strategy
+
+- Lazy loading for images (`loading="lazy"`)
+- Responsive image sets for appropriate sizing
+- Font loading with `font-display: swap`
+
+## CSS Architecture
+
+### Stylesheet Organization
+
+1. **normalize.css**: Browser normalization
+2. **webflow.css**: Webflow base styles and icon fonts
+3. **tiara-a06d9a.webflow.css**: 
+   - Brand design system
+   - Custom component styles
+   - Responsive breakpoints
+   - CSS variables for colors
+
+### CSS Variables (Brand Colors)
+
+Defined in `:root` in `tiara-a06d9a.webflow.css`:
+
+```css
+:root {
+  /* Primary Colors (Soft Foundation) */
+  --beige: #efe0cb;        /* Velvet Cream */
+  --b100: #efe9dd;          /* Soft Beige */
+  
+  /* Secondary Color (Touch of Heritage) */
+  --brown: #3f2823;         /* Royal Cocoa */
+  --b800: #3f2823;
+  --b700: #3f2823;
+  /* ... other brown variants */
+  
+  /* Accent Colors */
+  --accent-green: #142821;  /* Deep Velvet Green */
+  --vip-wine: #500b0c;       /* Vintage Wine */
+}
+```
+
+## Typography System
+
+### Font Files
+
+- **Houstiq.otf**: Serif font for headings and brand text
+  - Format: OpenType
+  - Usage: Headings, elegant statements
+  - Loaded via `@font-face`
+
+- **BDOGrotesk-VF.ttf**: Variable sans-serif font
+  - Format: TrueType Variable Font
+  - Weight range: 300-900
+  - Usage: Body text, labels, navigation
+  - Loaded via `@font-face` with variable weight support
+
+### Font Loading
+
+```css
+@font-face {
+  font-family: Houstiq;
+  src: url('../fonts/Houstiq.otf') format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Bdogrotesk Vf;
+  src: url('../fonts/BDOGrotesk-VF.ttf') format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+}
+```
+
+## JavaScript
+
+### Webflow Interactions
+
+- **File**: `js/webflow.js`
+- **Purpose**: Handles Webflow animations and interactions
+- **Usage**: Menu overlays, scroll animations, hover effects
+
+### Custom JavaScript
+
+Minimal custom JavaScript—most interactivity handled by Webflow interactions.
+
+## Image Assets
+
+### Supported Formats
+
+- **PNG**: Logos, icons, graphics with transparency
+- **JPG**: Photographs, team images
+- **WebP**: Optimized images (used for orla12 series)
+- **SVG**: Icons, simple graphics
+- **ICO**: Favicon
+
+### Image Organization
+
+- **Products**: `/images/products/` - Product packaging images
+- **Services**: `/images/services/` - Service photography
+- **Team**: `/images/team/` - Team member photos (JPG, converted from ARW)
+- **Philosophy**: `/images/philosophy/` - Visual content for philosophy section
+- **Brand Assets**: `/images/` - Logos, icons, hero images, favicon
+
+## Responsive Breakpoints
+
+Defined in CSS media queries:
+
+- **Mobile**: `max-width: 479px`
+- **Tablet**: `max-width: 991px` (and between 480px-991px)
+- **Desktop**: `min-width: 992px` and above
+
+## Development Workflow
+
+1. **Local Development**: Run `npm start` to serve on port 3004
+2. **File Editing**: Edit HTML, CSS, or JS files directly
+3. **Testing**: Test in browser with auto-reload (if using watch mode)
+4. **Image Updates**: Add images to appropriate subdirectories
+5. **Deployment**: Upload static files to hosting service
+
+## Technical Constraints
+
+- **No Build Process**: Static files served as-is
+- **No Backend**: Pure frontend, no server-side processing
+- **Webflow Compatibility**: Must maintain Webflow interaction compatibility
+- **Static Hosting**: Requires static file hosting (no server requirements)
+
+## Future Technical Considerations
+
+- **Image Optimization**: Implement automated image compression
+- **Performance Monitoring**: Add performance metrics
+- **Progressive Enhancement**: Consider service worker for offline capability
+- **CDN Integration**: Consider CDN for image delivery
+- **Build Process**: May benefit from build process for optimization

@@ -1,12 +1,4 @@
 @font-face {
-  font-family: Bdogrotesk Vf;
-  src: url('../fonts/BDOGrotesk-VF.ttf') format("truetype");
-  font-weight: 300 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: Houstiq;
   src: url('../fonts/Houstiq.otf') format("opentype");
   font-weight: normal;
@@ -14,19 +6,38 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: Inter;
+  src: url('../fonts/Inter_18pt-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --b100: #fbfbef;
-  --brown: #231916;
-  --b800: #231916;
-  --beige: #e4e0d4;
-  --b300: #a18d88;
-  --b500: #6b554f;
-  --b200: #cbbfbc;
-  --b400: #85706a;
-  --b600: #52403a;
-  --b700: #3a2b24;
-  --clay-beige: #d2cab7;
-  --woody-brown: #231309;
+  /* Brand Colors - Primary (Soft Foundation) */
+  --b100: #efe9dd; /* Soft Beige */
+  --beige: #efe0cb; /* Velvet Cream */
+  --b200: #efe0cb; /* Velvet Cream */
+  --clay-beige: #efe0cb; /* Velvet Cream */
+  
+  /* Brand Colors - Secondary (Touch of Heritage) */
+  --brown: #3f2823; /* Royal Cocoa */
+  --b800: #3f2823; /* Royal Cocoa */
+  --b700: #3f2823; /* Royal Cocoa */
+  --b600: #3f2823; /* Royal Cocoa */
+  --b500: #3f2823; /* Royal Cocoa */
+  --b400: #3f2823; /* Royal Cocoa */
+  --b300: #3f2823; /* Royal Cocoa */
+  --woody-brown: #3f2823; /* Royal Cocoa */
+  
+  /* Brand Colors - Accent (Crown of Nature) */
+  --accent-green: #142821; /* Deep Velvet Green */
+  
+  /* Brand Colors - VIP (Silent Luxury Red) */
+  --vip-wine: #500b0c; /* Vintage Wine */
+  
+  /* Neutral */
   --leaves-from-nature: white;
 }
 
@@ -782,7 +793,7 @@
 }
 
 body {
-  background-color: var(--b100);
+  background-color: #efe9dd;
   color: #333;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-size: 14px;
@@ -919,7 +930,7 @@ blockquote {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 120%;
@@ -1111,7 +1122,7 @@ blockquote {
 }
 
 .rich-text blockquote {
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
 }
 
 .home-section-01 {
@@ -1168,10 +1179,15 @@ blockquote {
   width: 100%;
   padding: 24px;
   display: flex;
+  transition: background-color 0.3s ease;
 }
 
 .header-container.dark {
   background-image: none;
+}
+
+.header-container.scrolled {
+  background-color: #efe9dd;
 }
 
 .header-left {
@@ -1336,7 +1352,7 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding: 16px;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   display: flex;
 }
 
@@ -1401,7 +1417,7 @@ blockquote {
   width: 100%;
   height: 48px;
   padding: 0 0 0 16px;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
@@ -1424,7 +1440,7 @@ blockquote {
   height: auto;
   margin-left: 4px;
   padding: 0;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
@@ -1657,9 +1673,10 @@ blockquote {
 }
 
 .tab-img {
-  aspect-ratio: 1 / 1.35;
+  aspect-ratio: 1 / 1.3;
   object-fit: cover;
   width: 100%;
+  max-height: 750px;
 }
 
 .image-tab-inner {
@@ -1910,6 +1927,10 @@ blockquote {
   max-width: 440px;
 }
 
+.menu-left-text .text--body-large {
+  color: var(--beige) !important;
+}
+
 .shop-section-01 {
   padding-top: 120px;
 }
@@ -1962,7 +1983,7 @@ blockquote {
   align-items: center;
   width: 20px;
   height: 20px;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 12px;
   line-height: 1.2;
   display: flex;
@@ -2002,6 +2023,13 @@ blockquote {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+}
+
+.material-flex .zoom-image,
+.material-flex img,
+.material-flex .zoom-wrap img {
+  filter: grayscale(100%) !important;
+  -webkit-filter: grayscale(100%) !important;
 }
 
 .material-img {
@@ -2067,7 +2095,7 @@ blockquote {
   width: 100%;
   height: 48px;
   padding: 0;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 12px;
   display: flex;
 }
@@ -2423,7 +2451,7 @@ blockquote {
   text-transform: uppercase;
   border: 1px #000;
   padding: 0;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
@@ -2472,7 +2500,7 @@ blockquote {
   border-radius: 0;
   height: 48px;
   padding: 0;
-  font-family: Bdogrotesk Vf, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
@@ -2923,12 +2951,12 @@ blockquote {
   }
 
   .home-section-04 {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 
   .image-tab {
     flex-flow: column;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .image-tab-right {
@@ -2942,6 +2970,7 @@ blockquote {
 
   .tab-img {
     aspect-ratio: 1 / 1.15;
+    max-height: 600px;
   }
 
   .image-tab-inner {
@@ -3611,11 +3640,3 @@ blockquote {
   }
 }
 
-
-@font-face {
-  font-family: 'Bdogrotesk Vf';
-  src: url('../fonts/BDOGrotesk-VF.ttf') format('truetype');
-  font-weight: 300 900;
-  font-style: normal;
-  font-display: swap;
-}

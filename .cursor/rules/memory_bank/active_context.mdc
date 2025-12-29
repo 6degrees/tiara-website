@@ -1,0 +1,68 @@
+---
+alwaysApply: true
+---
+
+# Active Context: Current Operations
+
+## Current Status
+
+**Last Updated**: December 29, 2024
+
+The Tiara Beauty website is in a stable, functional state with all core features implemented. Recent work has focused on image updates, brand color implementation, and design refinements.
+
+## Recent Changes
+
+### Image Updates (Most Recent)
+- ✅ Updated hero section to use `images/hero.png` (replaced Visual-2.png files)
+- ✅ Updated services section with unique images from `images/services/` directory
+- ✅ Updated products section with product images from `images/products/` directory
+- ✅ Updated team section with team photos from `images/team/` directory (converted from ARW to JPG)
+- ✅ Applied grayscale filter to team images via CSS
+- ✅ Reversed order of team images as requested
+
+### Brand Implementation
+- ✅ Implemented brand color palette in CSS variables
+- ✅ Updated menu overlay text to use primary brand color (Velvet Cream)
+- ✅ Updated favicon to use `images/favicon.ico`
+
+### Documentation
+- ✅ Enhanced project description with comprehensive technical details
+- ✅ Created Memory Bank structure
+
+## Current Focus
+
+**Active Work**: None currently—website is in stable state
+
+**Next Steps**: Awaiting user direction for any new features, updates, or refinements
+
+## Pending Questions
+
+None at this time.
+
+## Active Decisions
+
+1. **Team Images**: Displayed in black and white via CSS filter (not converted files) for flexibility
+2. **Color System**: Using CSS variables for all brand colors to ensure consistency
+3. **Image Organization**: Products, services, and team images organized in dedicated subdirectories
+4. **Development Server**: Using http-server on port 3004 for local development
+
+## Critical Considerations
+
+- **Image Optimization**: Some team images (JPG) are large (2-6MB) and could benefit from optimization for production
+- **Browser Cache**: Users may need to hard refresh to see updated images and styles
+- **Responsive Images**: Responsive image sets are implemented but could be expanded for better performance
+- **Brand Consistency**: All new content should align with brand colors and typography defined in CSS variables
+
+## Known Issues
+
+None currently identified.
+
+## Temporary State
+
+No temporary workarounds or experimental features in place.
+
+## Immediate Next Actions
+
+1. Monitor for any user requests for updates or new features
+2. Consider image optimization if performance becomes a concern
+3. Maintain brand consistency in any future updates

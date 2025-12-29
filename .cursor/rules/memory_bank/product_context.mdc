@@ -1,0 +1,94 @@
+---
+alwaysApply: true
+---
+
+# Product Context: Tiara Beauty Website
+
+## The 'Why': Problem Statement
+
+Tiara Beauty needed a digital presence that authentically represents their brand philosophy and allows potential clients to discover their services, products, and team. The website serves as the primary touchpoint for customers to understand Tiara's unique approach to beauty as ritual, not performance.
+
+## The 'What': Product Vision
+
+The Tiara Beauty Website is an elegant, refined digital experience that:
+- Communicates the brand's philosophy of "Beauty as Ritual"
+- Showcases services and products with premium aesthetics
+- Introduces the team of artisans who bring the brand to life
+- Provides essential information for booking and contact
+- Creates an emotional connection through intentional design and messaging
+
+## The 'How': User Experience
+
+### Target Audience
+
+**Primary Users:**
+- Women seeking premium beauty services in Saudi Arabia (particularly Al Khobar area)
+- Individuals interested in intentional self-care and beauty rituals
+- Clients who value cultural authenticity combined with global standards
+- People looking for expert-led services with a focus on long-term care
+
+**User Personas:**
+- **The Ritual Seeker**: Values intentional, meaningful beauty experiences over quick fixes
+- **The Cultural Connector**: Appreciates brands that honor Saudi heritage while embracing modern elegance
+- **The Quality Conscious**: Seeks expert services and thoughtfully designed products
+- **The Self-Care Advocate**: Prioritizes personal well-being and meaningful self-care practices
+
+### User Stories
+
+1. **As a potential client**, I want to understand Tiara's philosophy and approach to beauty, so I can determine if it aligns with my values
+2. **As a service seeker**, I want to see what services Tiara offers, so I can decide which treatment is right for me
+3. **As a product shopper**, I want to browse Tiara's product collection, so I can extend the ritual into my daily routine
+4. **As a new visitor**, I want to learn about Tiara's story and team, so I can feel confident in choosing their services
+5. **As a returning client**, I want to easily find contact information, so I can book my next appointment
+
+### Critical Success Factors
+
+**From User Perspective:**
+- **Clarity**: Users can quickly understand what Tiara offers and why it's different
+- **Trust**: Professional presentation builds confidence in the brand's expertise
+- **Emotional Connection**: Design and messaging resonate with users seeking intentional beauty experiences
+- **Accessibility**: Easy navigation and clear information architecture
+- **Visual Appeal**: Premium aesthetics that reflect the brand's commitment to elegance
+
+### User Journey
+
+```mermaid
+flowchart TD
+    A["User Arrives<br>at Homepage"] --> B["Views Hero Section<br>with Brand Message"]
+    B --> C{"User Interest?"}
+    C -->|Services| D["Explores Services<br>Section"]
+    C -->|Products| E["Browses Products<br>Gallery"]
+    C -->|Story| F["Reads About Page<br>& Team"]
+    C -->|Contact| G["Visits Contact<br>Page"]
+    D --> H["Understands Service<br>Offerings"]
+    E --> I["Views Product<br>Collection"]
+    F --> J["Connects with Brand<br>Story & Team"]
+    G --> K["Gets Contact Info<br>& Booking Options"]
+    H --> L["Takes Action<br>Booking/Inquiry"]
+    I --> L
+    J --> L
+    K --> L
+```
+
+### Key User Interactions
+
+1. **Menu Navigation**: Full-screen overlay menu provides elegant navigation with brand messaging
+2. **Service Exploration**: Visual service cards with hover effects for engagement
+3. **Philosophy Discovery**: Tabbed interface for exploring brand values (Calm, Balance, Authenticity)
+4. **Product Browsing**: Image gallery with zoom effects for product details
+5. **Team Connection**: Black and white team photos create intimate, professional connection
+
+### Brand Messaging Integration
+
+The website weaves Tiara's core messages throughout the user experience:
+- **"Beauty as Ritual"**: Emphasized in hero sections and philosophy content
+- **"At Tiara, beauty is not applied — it is refined"**: Featured in menu overlay and key sections
+- **Brand Values**: Calm, intentional, nurturing, culturally rooted—reflected in design choices and content
+
+### Accessibility Considerations
+
+- Semantic HTML structure for screen readers
+- Proper alt text for all images
+- Clear navigation and information hierarchy
+- Responsive design for various device sizes
+- High contrast text for readability

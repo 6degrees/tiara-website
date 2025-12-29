@@ -1,0 +1,199 @@
+---
+alwaysApply: true
+---
+
+# System Patterns: Architectural Blueprint
+
+## Architecture Overview
+
+The Tiara Beauty website follows a **static site architecture** built from a Webflow export. The architecture is simple and elegant, focusing on presentation and brand consistency.
+
+```mermaid
+flowchart TD
+    A["Static HTML Pages"] --> B["CSS Styling<br>System"]
+    A --> C["JavaScript<br>Interactions"]
+    B --> D["Brand Design<br>System"]
+    C --> E["Webflow<br>Interactions"]
+    D --> F["CSS Variables<br>for Colors"]
+    D --> G["Typography<br>System"]
+    E --> H["Menu Overlay<br>Navigation"]
+    A --> I["Image Assets<br>Organization"]
+```
+
+## Key Technical Decisions
+
+### 1. Static Site Architecture
+
+**Decision**: Use static HTML/CSS/JavaScript (Webflow export)
+
+**Rationale**:
+- Simple deployment and hosting
+- Fast page loads
+- No backend dependencies
+- Easy to maintain and update
+
+**Implementation**: All pages are static HTML files with linked CSS and JavaScript
+
+### 2. CSS Variable System for Brand Colors
+
+**Decision**: Use CSS custom properties (variables) for all brand colors
+
+**Rationale**:
+- Ensures brand consistency across all pages
+- Easy to update colors globally
+- Maintains design system integrity
+
+**Implementation**:
+```css
+:root {
+  --beige: #efe0cb; /* Velvet Cream */
+  --b100: #efe9dd; /* Soft Beige */
+  --brown: #3f2823; /* Royal Cocoa */
+  --accent-green: #142821; /* Deep Velvet Green */
+  --vip-wine: #500b0c; /* Vintage Wine */
+}
+```
+
+### 3. Image Organization Strategy
+
+**Decision**: Organize images by purpose in subdirectories
+
+**Rationale**:
+- Clear file structure
+- Easy to locate and update images
+- Maintains separation of concerns
+
+**Structure**:
+```
+/images
+  /products - Product images
+  /services - Service images
+  /team - Team photos
+  /philosophy - Philosophy section visuals
+  / - General brand assets (logos, icons, hero)
+```
+
+### 4. Responsive Image Implementation
+
+**Decision**: Use responsive image sets with srcset attributes
+
+**Rationale**:
+- Optimizes performance across devices
+- Serves appropriate image sizes
+- Maintains visual quality
+
+**Pattern**:
+```html
+<img srcset="image-500w.jpg 500w, image-800w.jpg 800w, image-1080w.jpg 1080w" 
+     sizes="(max-width: 507px) 100vw, 507px" 
+     src="image.jpg">
+```
+
+### 5. CSS Filter for Team Images
+
+**Decision**: Apply grayscale filter via CSS rather than converting image files
+
+**Rationale**:
+- Maintains original color images for flexibility
+- Easy to toggle or modify
+- No need to maintain duplicate image sets
+
+**Implementation**:
+```css
+.material-flex .zoom-image {
+  filter: grayscale(100%) !important;
+}
+```
+
+## Design Patterns
+
+### 1. Split-Screen Layouts
+
+**Pattern**: Hero sections use split-screen design with image on one side, content on the other
+
+**Usage**: Homepage hero, menu overlay
+
+**Benefits**: Creates visual interest and elegant presentation
+
+### 2. Full-Screen Menu Overlay
+
+**Pattern**: Menu opens as full-screen overlay with brand messaging
+
+**Implementation**: JavaScript-controlled visibility with smooth transitions
+
+**Benefits**: Immersive navigation experience that reinforces brand
+
+### 3. Tabbed Content Interface
+
+**Pattern**: Philosophy section uses tabbed interface for multiple content views
+
+**Usage**: Homepage philosophy section (Calm, Balance, Authenticity)
+
+**Benefits**: Organizes content without overwhelming the user
+
+### 4. Image Gallery with Zoom
+
+**Pattern**: Product and team images use zoom effects on hover
+
+**Implementation**: CSS transforms and transitions
+
+**Benefits**: Interactive element that adds depth to static images
+
+### 5. Consistent Header/Footer
+
+**Pattern**: All pages share the same header and footer components
+
+**Benefits**: Consistent navigation and branding across site
+
+## Component Relationships
+
+```mermaid
+graph LR
+    A["Header Component"] --> B["Menu Overlay"]
+    A --> C["Logo Variants"]
+    D["Page Content"] --> E["Hero Sections"]
+    D --> F["Content Sections"]
+    D --> G["Image Galleries"]
+    H["Footer Component"] --> I["Navigation Links"]
+    H --> J["Brand Logo"]
+```
+
+## File Organization Patterns
+
+### CSS Architecture
+- `normalize.css` - Browser reset
+- `webflow.css` - Webflow base styles
+- `tiara-a06d9a.webflow.css` - Custom Tiara styles and brand system
+
+### HTML Structure
+- Consistent semantic HTML5 structure
+- Shared header and footer across pages
+- Section-based content organization
+
+### JavaScript
+- `webflow.js` - Webflow interactions and animations
+- Minimal custom JavaScript (relies on Webflow interactions)
+
+## Design System Patterns
+
+### Color Usage
+- **Primary colors** (Velvet Cream, Soft Beige): Backgrounds, text on dark backgrounds
+- **Secondary color** (Royal Cocoa): Text, borders, dark elements
+- **Accent colors** (Deep Velvet Green, Vintage Wine): Reserved for special emphasis
+
+### Typography Hierarchy
+- **Houstiq (serif)**: Headings, brand text, elegant statements
+- **BDOGrotesk VF (sans-serif)**: Body text, labels, navigation
+
+### Spacing System
+- Consistent padding and margins
+- Grid-based layouts for sections
+- Generous whitespace for elegance
+
+## Maintenance Guidelines
+
+1. **Brand Colors**: Always use CSS variables, never hardcode colors
+2. **Images**: Maintain organization in subdirectories by purpose
+3. **Typography**: Use defined font families, maintain hierarchy
+4. **Responsive**: Test all changes across mobile, tablet, and desktop
+5. **Accessibility**: Ensure semantic HTML and alt text for images

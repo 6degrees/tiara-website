@@ -1,0 +1,13 @@
+{
+  "name": "tiara-website",
+  "version": "1.0.0",
+  "description": "Tiara Salon & Spa Website",
+  "scripts": {
+    "start": "http-server -p 3004 -o",
+    "dev": "http-server -p 3004 -o"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+

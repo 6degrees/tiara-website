@@ -1,0 +1,68 @@
+---
+alwaysApply: true
+---
+
+# Project Brief: Tiara Beauty Website
+
+## Project Overview
+
+The Tiara Beauty Website is a static website built from a Webflow export that serves as the digital presence for Tiara Beauty, a Saudi-born beauty brand. The website showcases the brand's philosophy, services, products, and team while maintaining an elegant, refined aesthetic that reflects the brand's commitment to ritual and intentional care.
+
+## Primary Objectives
+
+1. **Brand Representation**: Create a digital experience that authentically represents Tiara Beauty's brand identity—calm, intentional, nurturing, and culturally rooted
+2. **Service Showcase**: Present Tiara's four core service offerings (Facial Treatments, Hair Styling, Spa Therapies, Beauty Rituals) with visual elegance
+3. **Product Display**: Showcase Tiara's beauty products (lashes, glue, glue remover, lash shampoo) in an appealing gallery format
+4. **Brand Storytelling**: Communicate Tiara's philosophy and values through carefully crafted content and visual design
+5. **Team Introduction**: Present the Tiara Artisans team in an elegant, professional manner
+
+## Key Deliverables
+
+- **Homepage (index.html)**: Complete landing experience with hero, services, philosophy, and products sections
+- **About Page (about.html)**: Brand story, identity, and team presentation
+- **Contact Page (contact.html)**: Location information and booking options
+- **Supporting Pages**: Privacy policy and custom 404 error page
+- **Design System**: Consistent brand colors, typography, and visual elements across all pages
+- **Responsive Design**: Mobile-first approach ensuring optimal experience across all devices
+
+## Stakeholder Expectations
+
+- **Brand Consistency**: All visual elements must align with Tiara's brand identity and design system
+- **Performance**: Fast loading times and optimized images for smooth user experience
+- **Accessibility**: Semantic HTML and proper alt text for all images
+- **Elegance**: Premium aesthetic that reflects the brand's commitment to refined rituals
+- **Cultural Sensitivity**: Respectful representation of Saudi cultural elements and values
+
+## Project Constraints
+
+- **Static Site**: No backend or database—pure HTML/CSS/JavaScript
+- **Webflow Export**: Built from Webflow export, maintaining compatibility with Webflow interactions
+- **Development Server**: Local development using http-server on port 3004
+- **Browser Compatibility**: Must work across modern browsers
+- **Image Formats**: Support for PNG, JPG, WebP, and SVG formats
+
+## Success Criteria
+
+- [x] All pages render correctly with brand-consistent styling
+- [x] Responsive design works across mobile, tablet, and desktop
+- [x] Brand colors and typography are consistently applied
+- [x] All images are optimized and properly referenced
+- [x] Navigation and menu overlay function correctly
+- [x] Team section displays images in black and white as intended
+- [x] Product and service images are properly organized and displayed
+
+## Project Scope Boundaries
+
+**In Scope:**
+- Static website pages (homepage, about, contact, privacy, 404)
+- Brand design system implementation
+- Image optimization and organization
+- Responsive layout and styling
+- Menu overlay and navigation
+
+**Out of Scope:**
+- Backend functionality or database integration
+- User authentication or accounts
+- E-commerce functionality (product purchasing)
+- Content management system
+- Blog or dynamic content features
