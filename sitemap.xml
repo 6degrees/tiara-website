@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://tiarabeauty.sa/</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiarabeauty.sa/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tiarabeauty.sa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiarabeauty.sa/"/>
+    <image:image>
+      <image:loc>https://tiarabeauty.sa/images/hero.png</image:loc>
+      <image:title>Tiara Beauty - Beauty as Ritual</image:title>
+    </image:image>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://tiarabeauty.sa/about.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiarabeauty.sa/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tiarabeauty.sa/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiarabeauty.sa/about.html"/>
+    <image:image>
+      <image:loc>https://tiarabeauty.sa/images/about-hero.png</image:loc>
+      <image:title>About Tiara Beauty</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://tiarabeauty.sa/contact.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tiarabeauty.sa/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tiarabeauty.sa/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tiarabeauty.sa/contact.html"/>
+  </url>
+  
+  <!-- Privacy Policy (noindex, but included for completeness) -->
+  <url>
+    <loc>https://tiarabeauty.sa/privacy-policy.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>
+
