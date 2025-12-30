@@ -832,8 +832,8 @@ body {
   background-color: #efe9dd;
   color: #333;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1 {
@@ -841,7 +841,7 @@ h1 {
   margin-bottom: 10px;
   font-size: 38px;
   font-weight: bold;
-  line-height: 44px;
+  line-height: 1.2;
 }
 
 h2 {
@@ -849,7 +849,7 @@ h2 {
   margin-bottom: 10px;
   font-size: 32px;
   font-weight: bold;
-  line-height: 36px;
+  line-height: 1.3;
 }
 
 h3 {
@@ -857,7 +857,7 @@ h3 {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 1.4;
 }
 
 h4 {
@@ -865,23 +865,23 @@ h4 {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 1.4;
 }
 
 h5 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1.5;
 }
 
 h6 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 1.5;
 }
 
 p {
@@ -902,7 +902,7 @@ blockquote {
   margin-bottom: 10px;
   padding: 10px 20px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.6;
 }
 
 .text--heading-01 {
@@ -913,7 +913,7 @@ blockquote {
   font-family: Houstiq, sans-serif;
   font-size: 40px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .text--heading-02 {
@@ -924,7 +924,7 @@ blockquote {
   font-family: Houstiq, sans-serif;
   font-size: 32px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.3;
 }
 
 .text--heading-03 {
@@ -935,7 +935,7 @@ blockquote {
   font-family: Houstiq, sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.4;
 }
 
 .text--body-large {
@@ -943,9 +943,9 @@ blockquote {
   margin-top: 0;
   margin-bottom: 0;
   font-family: Houstiq, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1.6;
 }
 
 .text--body-large.title {
@@ -956,9 +956,9 @@ blockquote {
   margin-top: 0;
   margin-bottom: 0;
   font-family: Houstiq, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 1.5;
 }
 
 .text-label {
@@ -967,9 +967,9 @@ blockquote {
   margin-top: 0;
   margin-bottom: 0;
   font-family: Inter, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.4;
 }
 
 .text-label.light {
@@ -1113,7 +1113,7 @@ blockquote {
   font-family: Houstiq, sans-serif;
   font-size: 40px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.2;
 }
 
 .rich-text h2, .rich-text h3 {
@@ -1121,7 +1121,7 @@ blockquote {
   text-transform: uppercase;
   font-family: Houstiq, sans-serif;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.3;
 }
 
 .rich-text h4 {
@@ -1130,7 +1130,7 @@ blockquote {
   font-family: Houstiq, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.4;
 }
 
 .rich-text h5 {
@@ -1139,7 +1139,7 @@ blockquote {
   font-family: Houstiq, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.4;
 }
 
 .rich-text h6 {
@@ -1148,13 +1148,13 @@ blockquote {
   font-family: Houstiq, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 1.5;
 }
 
 .rich-text p {
   font-family: Houstiq, sans-serif;
-  font-size: 14px;
-  line-height: 160%;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .rich-text blockquote {
@@ -1529,7 +1529,7 @@ blockquote {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  max-width: 460px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1631,6 +1631,20 @@ blockquote {
 .product-thumbnail.small {
   width: 100%;
   max-width: 460px;
+}
+
+.home-section-03-title {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 480px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: 120px;
+  padding-bottom: 60px;
+  display: flex;
 }
 
 .home-section-03 .product-thumbnail {
@@ -1827,7 +1841,7 @@ blockquote {
 }
 
 .home-section-06-desc {
-  max-width: 420px;
+  max-width: 600px;
 }
 
 .zoom-image {
@@ -1884,6 +1898,7 @@ blockquote {
   color: var(--brown);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  line-height: 1.5;
 }
 
 /* Arabic product names */
@@ -2143,6 +2158,13 @@ html.rtl .menu-text {
 .material-flex .zoom-wrap img {
   filter: grayscale(100%) !important;
   -webkit-filter: grayscale(100%) !important;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+}
+
+.material-flex .zoom-wrap:hover .zoom-image,
+.material-flex .zoom-wrap:hover img {
+  filter: grayscale(0%) !important;
+  -webkit-filter: grayscale(0%) !important;
 }
 
 .material-img {
@@ -2800,11 +2822,11 @@ html.rtl .menu-text {
   }
 
   .text--body-large {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .text-body-small {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .text-label.image-tab-title {
@@ -2854,11 +2876,11 @@ html.rtl .menu-text {
   }
 
   .rich-text h6, .rich-text p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .rich-text blockquote {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .home-section-container {
@@ -3015,6 +3037,13 @@ html.rtl .menu-text {
 
   .product-list-wrap.only-home {
     display: none;
+  }
+
+  .home-section-03-title {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
 
   .product-list {
@@ -3444,11 +3473,11 @@ html.rtl .menu-text {
   }
 
   .text--body-large {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .text-label {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .rich-text {
@@ -3474,11 +3503,11 @@ html.rtl .menu-text {
   }
 
   .rich-text p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .cart-quantity, .cart-quantity.dark {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .product-list-item-link {
@@ -3574,6 +3603,11 @@ html.rtl .menu-text {
 
   .product-list {
     grid-template-columns: 1fr;
+  }
+
+  .home-section-03-title {
+    padding-top: 80px;
+    padding-bottom: 30px;
   }
 
   .home-section-03 .product-thumbnail {
