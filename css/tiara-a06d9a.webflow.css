@@ -14,7 +14,43 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: Cairo;
+  src: url('../fonts/Cairo-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url('../fonts/Cairo-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url('../fonts/Cairo-SemiBold.ttf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url('../fonts/Cairo-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
+  /* Unified Padding */
+  --padding-horizontal: 24px;
+  --padding-horizontal-mobile: 20px;
+  
   /* Brand Colors - Primary (Soft Foundation) */
   --b100: #efe9dd; /* Soft Beige */
   --beige: #efe0cb; /* Velvet Cream */
@@ -1142,7 +1178,7 @@ blockquote {
 }
 
 .home-section-01-left {
-  background-image: linear-gradient(#00000080, #0000 10%), url('../images/Visual-2.png');
+  background-image: linear-gradient(#00000080, #0000 10%), url('../images/hero.png');
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -1150,7 +1186,7 @@ blockquote {
 }
 
 .home-section-01-right {
-  background-image: url('../images/Visual-2.png');
+  background-image: url('../images/hero.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1177,7 +1213,10 @@ blockquote {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 24px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   transition: background-color 0.3s ease;
 }
@@ -1610,8 +1649,8 @@ blockquote {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: flex;
 }
 
@@ -1772,8 +1811,8 @@ blockquote {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: grid;
 }
 
@@ -1803,18 +1842,68 @@ blockquote {
 }
 
 .journal-list {
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 16px;
+  scroll-behavior: smooth;
+  width: 100%;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.journal-list::-webkit-scrollbar {
+  display: none;
+}
+
+.journal-item {
+  flex: 0 0 auto;
+  width: 380px;
+  min-width: 380px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .journal-link {
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.product-name {
+  margin-top: 16px;
+  text-align: center;
+  font-family: Houstiq, sans-serif;
+  font-size: 18px;
+  color: var(--brown);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Arabic product names */
+html[dir="rtl"] .product-name,
+html.rtl .product-name {
+  font-family: Cairo, sans-serif;
+  text-transform: none;
+}
+
+
+.journal-list-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.journal-list-wrap::-webkit-scrollbar {
+  display: none;
 }
 
 .footer {
@@ -1830,8 +1919,8 @@ blockquote {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: grid;
 }
 
@@ -1875,9 +1964,11 @@ blockquote {
   align-items: center;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   display: none;
   position: fixed;
   inset: 0%;
+  overflow: hidden;
 }
 
 .menu-left {
@@ -1898,6 +1989,10 @@ blockquote {
   align-items: center;
   display: flex;
   position: relative;
+  min-height: 100vh;
+  padding: 40px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .menu-link-text {
@@ -1910,11 +2005,28 @@ blockquote {
   overflow: hidden;
 }
 
+.menu-link-wrap {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: auto;
+  padding: 20px 0;
+  flex-shrink: 0;
+}
+
 .menu-text {
   text-transform: uppercase;
   font-family: Houstiq, sans-serif;
   font-size: 54px;
   line-height: 1.2;
+}
+
+/* Reduce font size for Arabic menu text */
+html[dir="rtl"] .menu-text,
+html.rtl .menu-text {
+  font-size: 42px;
 }
 
 .menu-right-label {
@@ -1950,7 +2062,7 @@ blockquote {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 24px;
+  padding-left: var(--padding-horizontal);
   display: flex;
 }
 
@@ -1994,7 +2106,7 @@ blockquote {
 }
 
 .about-section-01 {
-  background-image: url('../images/hero.png') !important;
+  background-image: url('../images/about-hero.png') !important;
   background-position: 50%;
   background-size: cover;
   background-attachment: scroll;
@@ -2002,7 +2114,8 @@ blockquote {
   align-items: flex-end;
   height: 600px;
   padding-bottom: 24px;
-  padding-left: 24px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: flex;
 }
 
@@ -2120,8 +2233,8 @@ blockquote {
 .product-section-03-right {
   justify-content: center;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: flex;
   position: relative;
 }
@@ -2200,8 +2313,8 @@ blockquote {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   place-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: grid;
 }
 
@@ -2282,8 +2395,8 @@ blockquote {
   place-items: end stretch;
   width: 100%;
   padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: grid;
   position: absolute;
   bottom: 0;
@@ -2328,13 +2441,13 @@ blockquote {
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   place-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: grid;
 }
 
 .store-section-01 {
-  background-image: linear-gradient(#0003, #0003), url('../images/hero.png') !important;
+  background-image: linear-gradient(#0003, #0003), url('../images/Visual-2.png') !important;
   background-position: 0 0, 50%;
   background-size: auto, cover;
   background-attachment: scroll, scroll;
@@ -2342,7 +2455,8 @@ blockquote {
   align-items: flex-end;
   height: 600px;
   padding-bottom: 24px;
-  padding-left: 24px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: flex;
 }
 
@@ -2356,8 +2470,8 @@ blockquote {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: var(--padding-horizontal);
+  padding-right: var(--padding-horizontal);
   display: grid;
 }
 
@@ -2439,7 +2553,7 @@ blockquote {
   flex: 1;
   width: 100%;
   margin-right: 0;
-  padding-right: 40px;
+  padding-right: var(--padding-horizontal);
 }
 
 .option-list {
@@ -2756,7 +2870,7 @@ blockquote {
   }
 
   .home-section-01-right {
-    background-image: linear-gradient(#00000080, #0000 20%), url('../images/Visual-2-p-800.png');
+    background-image: linear-gradient(#00000080, #0000 20%), url('../images/hero.png');
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -2936,8 +3050,8 @@ blockquote {
     width: 100%;
     margin-top: 0;
     margin-bottom: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .product-button {
@@ -2979,8 +3093,8 @@ blockquote {
 
   .image-tab-inner-right {
     padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .image-tab-text-group {
@@ -3004,8 +3118,8 @@ blockquote {
   .home-section-06-container {
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .home-section-06-title {
@@ -3022,10 +3136,20 @@ blockquote {
   }
 
   .journal-list {
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
+  
+  .journal-item {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  
 
   .footer {
     margin-top: 100px;
@@ -3035,8 +3159,8 @@ blockquote {
     grid-row-gap: 48px;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .footer-link-group {
@@ -3068,7 +3192,7 @@ blockquote {
   .shop-section-01-title {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    padding-left: 20px;
+    padding-left: var(--padding-horizontal-mobile);
   }
 
   .shop-category-list {
@@ -3082,7 +3206,8 @@ blockquote {
 
   .about-section-01 {
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .about-section-text-group {
@@ -3139,8 +3264,8 @@ blockquote {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .journal-section-01 {
@@ -3160,8 +3285,8 @@ blockquote {
   .journals-list {
     grid-row-gap: 40px;
     grid-template-columns: 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .journals-item {
@@ -3227,7 +3352,8 @@ blockquote {
 
   .store-section-01 {
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .store-section-02 {
@@ -3235,8 +3361,8 @@ blockquote {
   }
 
   .store-section-02-container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
   }
 
   .store-list {
@@ -3383,6 +3509,12 @@ blockquote {
   .menu-text {
     font-size: 40px;
   }
+  
+  /* Reduce font size for Arabic menu text on mobile */
+  html[dir="rtl"] .menu-text,
+  html.rtl .menu-text {
+    font-size: 32px;
+  }
 
   .shop-section-01-title {
     padding-right: 40px;
@@ -3437,7 +3569,7 @@ blockquote {
 
 @media screen and (max-width: 479px) {
   .home-section-01-right {
-    background-image: linear-gradient(#00000080, #0000 20%), url('../images/Visual-2-p-500.png');
+    background-image: linear-gradient(#00000080, #0000 20%), url('../images/hero.png');
   }
 
   .product-list {
@@ -3638,5 +3770,316 @@ blockquote {
   #w-node-e999b899-b306-f229-0c74-c5028eceec25-7af4bc4c, #w-node-_5e4b62ad-7d32-98d3-5a69-37b3e58910e4-7af4bc4c, #w-node-ba1747d3-dcd4-a284-81be-f605deeda518-7af4bc4c {
     grid-area: 2 / 1 / 3 / 9;
   }
+}
+
+/* RTL Support Styles */
+html[dir="rtl"],
+html.rtl {
+  direction: rtl;
+}
+
+html[dir="rtl"] body,
+body.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--beige);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+}
+
+.lang-btn.active {
+  color: var(--beige);
+  font-weight: 600;
+  opacity: 1;
+}
+
+.lang-separator {
+  color: var(--beige);
+  opacity: 0.5;
+}
+
+/* Language switcher in menu */
+.menu-link-wrap .lang-switcher,
+.menu-right .lang-switcher,
+.menu .lang-switcher {
+  margin-top: 32px !important;
+  margin-bottom: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
+  z-index: 10 !important;
+  flex-shrink: 0 !important;
+}
+
+.menu-link-wrap .lang-btn,
+.menu-right .lang-btn,
+.menu .lang-btn {
+  color: var(--brown) !important;
+  color: #3f2823 !important;
+  font-family: Houstiq, sans-serif !important;
+  font-size: 24px !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 12px 16px !important;
+  transition: opacity 0.3s ease !important;
+  opacity: 1 !important;
+  line-height: 1.2 !important;
+  display: inline-block !important;
+  min-height: 40px !important;
+  visibility: visible !important;
+}
+
+/* English button uppercase, Arabic button normal */
+.menu-link-wrap .lang-btn[data-lang="en"],
+.menu-right .lang-btn[data-lang="en"],
+.menu .lang-btn[data-lang="en"] {
+  text-transform: uppercase !important;
+}
+
+.menu-link-wrap .lang-btn[data-lang="ar"],
+.menu-right .lang-btn[data-lang="ar"],
+.menu .lang-btn[data-lang="ar"] {
+  text-transform: none !important;
+}
+
+.menu-link-wrap .lang-btn:hover {
+  opacity: 1 !important;
+}
+
+.menu-link-wrap .lang-btn.active {
+  opacity: 1 !important;
+  font-weight: 600;
+}
+
+.menu-link-wrap .lang-separator {
+  color: var(--brown) !important;
+  color: #3f2823 !important;
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 4px;
+}
+
+/* Hide separator when only one button is visible */
+.menu-link-wrap .lang-switcher:has(.lang-btn[style*="display: none"]) .lang-separator {
+  display: none !important;
+}
+
+html[dir="rtl"] .lang-switcher,
+html.rtl .lang-switcher {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* RTL Layout Adjustments */
+html[dir="rtl"] .header-container,
+html.rtl .header-container {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .header-left,
+html.rtl .header-left {
+  order: 2;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .header-right,
+html.rtl .header-right {
+  order: 1;
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .mobile-menu-wrap,
+html.rtl .mobile-menu-wrap {
+  order: 1;
+}
+
+html[dir="rtl"] .header-link-wrap,
+html.rtl .header-link-wrap {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .header-link,
+html.rtl .header-link {
+  flex-direction: row;
+}
+
+/* Ensure logo is first on the right in RTL */
+html[dir="rtl"] .header-logo,
+html.rtl .header-logo {
+  order: 1;
+}
+
+html[dir="rtl"] .header-link-wrap.only-pc,
+html.rtl .header-link-wrap.only-pc {
+  order: 2;
+  margin-right: 80px;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .home-section-container,
+html.rtl .home-section-container {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+}
+
+/* Keep Philosophy section in LTR layout for both languages - no RTL support */
+html[dir="rtl"] .image-tab,
+html.rtl .image-tab {
+  flex-direction: row;
+  direction: ltr;
+}
+
+html[dir="rtl"] .image-tab-right,
+html.rtl .image-tab-right {
+  position: absolute;
+  right: 0;
+  left: auto;
+  bottom: 68px;
+  width: 50%;
+  flex-direction: row;
+}
+
+html[dir="rtl"] .image-tab-left,
+html.rtl .image-tab-left {
+  order: 0;
+}
+
+html[dir="rtl"] .image-tab-inner,
+html.rtl .image-tab-inner {
+  grid-template-columns: 1fr 1fr;
+  direction: ltr;
+}
+
+html[dir="rtl"] .image-tab-inner-left,
+html.rtl .image-tab-inner-left {
+  order: 1;
+}
+
+html[dir="rtl"] .image-tab-inner-right,
+html.rtl .image-tab-inner-right {
+  order: 2;
+  text-align: right;
+}
+
+html[dir="rtl"] .product-list,
+html.rtl .product-list {
+  direction: rtl;
+}
+
+/* RTL Text Alignment */
+html[dir="rtl"] .text--body-large,
+html[dir="rtl"] .text--heading-01,
+html[dir="rtl"] .text-label,
+html.rtl .text--body-large,
+html.rtl .text--heading-01,
+html.rtl .text-label {
+  text-align: right;
+}
+
+html[dir="rtl"] .image-tab-text-group,
+html.rtl .image-tab-text-group {
+  text-align: right;
+}
+
+/* RTL Arrow Icons */
+html[dir="rtl"] .button-arrow img,
+html.rtl .button-arrow img {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .long-arrow-right,
+html.rtl .long-arrow-right {
+  transform: scaleX(-1);
+}
+
+/* RTL Menu */
+html[dir="rtl"] .menu-left,
+html.rtl .menu-left {
+  text-align: right;
+}
+
+html[dir="rtl"] .menu-right,
+html.rtl .menu-right {
+  text-align: right;
+}
+
+/* RTL Footer */
+html[dir="rtl"] .footer-container,
+html.rtl .footer-container {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer-link-group,
+html.rtl .footer-link-group {
+  direction: rtl;
+}
+
+/* Arabic Font Support */
+html[dir="rtl"] body,
+html.rtl body {
+  font-family: 'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+html[dir="rtl"] .text--body-large,
+html[dir="rtl"] .text--heading-01,
+html[dir="rtl"] .text--heading-03,
+html[dir="rtl"] .text-label,
+html[dir="rtl"] .menu-text,
+html.rtl .text--body-large,
+html.rtl .text--heading-01,
+html.rtl .text--heading-03,
+html.rtl .text-label,
+html.rtl .menu-text {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Arabic language button uses Cairo font */
+.menu-link-wrap .lang-btn[data-lang="ar"],
+.menu-right .lang-btn[data-lang="ar"],
+.menu .lang-btn[data-lang="ar"] {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+/* RTL Grid Adjustments */
+html[dir="rtl"] .home-section-02-container,
+html.rtl .home-section-02-container {
+  direction: rtl;
+}
+
+html[dir="rtl"] .home-section-06-container,
+html.rtl .home-section-06-container {
+  direction: rtl;
 }
 
