@@ -6,7 +6,7 @@ alwaysApply: true
 
 ## Project Status: ✅ Complete & Stable
 
-**Last Updated**: December 29, 2024
+**Last Updated**: December 30, 2025
 
 ## Completed Features
 
@@ -34,17 +34,20 @@ alwaysApply: true
 
 ### Design System Implementation
 - [x] Brand color palette implemented via CSS variables
-- [x] Typography system (Houstiq serif, BDOGrotesk VF sans-serif)
+- [x] Typography system (Houstiq serif, Inter sans-serif, Cairo for Arabic)
+- [x] Typography improvements following UX best practices (16px body text, improved line-heights)
+- [x] Unified padding system with CSS variables (24px desktop, 20px mobile)
 - [x] Logo variants (white for dark backgrounds, dark for light)
 - [x] Consistent header and footer across all pages
 - [x] Responsive design for mobile, tablet, and desktop
 
 ### Image Assets
-- [x] Hero images updated to use `images/hero.png`
+- [x] Hero images updated (home: `images/hero.png`, about: `images/about-hero.png`, contact: `images/Visual-2.png`)
 - [x] Services section images updated with unique service photos
 - [x] Products section images updated with product packaging photos
 - [x] Team section images updated with team member photos
-- [x] Team images displayed in grayscale via CSS filter
+- [x] Team images displayed in grayscale via CSS filter with color reveal on hover
+- [x] Philosophy section updated with salon/spa interior visuals
 - [x] All images organized in appropriate subdirectories
 
 ### Navigation & Interactions
@@ -58,15 +61,36 @@ alwaysApply: true
 - [x] Brand messaging integrated throughout site
 - [x] Color consistency across all pages
 - [x] Typography hierarchy established
+- [x] Website background color set to `#efe0cb` (Velvet Cream)
+- [x] Services section background set to `#efe9dd` (Soft Beige)
+- [x] Navbar background changes to `#efe9dd` on scroll
 
 ### Documentation
 - [x] Project description enhanced with technical details
 - [x] Memory Bank structure created
 - [x] Image specifications documented
 
+### Internationalization (i18n) & RTL Support
+- [x] Bilingual support (English/Arabic) implemented
+- [x] Translation system with `translations.js` and `language-switcher.js`
+- [x] Cairo font integrated for Arabic typography
+- [x] RTL layout support for Arabic version
+- [x] Language switcher in menu overlay
+- [x] All content translated (navigation, hero sections, services, products, philosophy, about, contact, privacy policy)
+- [x] RTL-specific CSS styles for header, menu, and content sections
+
+### UX Improvements
+- [x] Typography system improved (16px body text minimum, improved line-heights)
+- [x] Content section widths increased for better readability
+  - [x] "THE RITUAL OF BEING CROWNED" section: 460px → 800px
+  - [x] Products description: 420px → 600px
+- [x] Services section title unified (removed repeated labels)
+- [x] Team image hover effect (color reveal on hover)
+- [x] Mobile services section layout fixes (removed brown gaps, seamless coverage)
+
 ## Current Tasks
 
-**No active tasks** - Website is in stable, complete state
+**No active tasks** - Website is in stable, complete state with bilingual support
 
 ## Pending Features
 
@@ -122,7 +146,29 @@ The project is ready for production deployment and maintenance.
 
 ## Change Log
 
-### December 29, 2024
+### December 30, 2025
+- Implemented bilingual (Arabic/English) and RTL support
+  - Added translation system with translations.js and language-switcher.js
+  - Integrated Cairo font for Arabic typography
+  - Added RTL layout support across all sections
+  - Translated all content including privacy policy
+- Improved typography system following UX best practices
+  - Increased body text from 14px to 16px (minimum readability standard)
+  - Increased body-large text from 16px to 18px
+  - Updated line-heights to relative units (1.5-1.6 for body, 1.2-1.4 for headings)
+  - Improved mobile typography with minimum 15px for body text
+- Increased content section widths for better readability
+  - Expanded "THE RITUAL OF BEING CROWNED" section width from 460px to 800px
+  - Expanded products description width from 420px to 600px
+- Unified services section title (removed repeated "OUR RITUAL SERVICES" labels)
+- Added team image hover effect (color reveal on hover)
+- Updated about page hero image to `images/about-hero.png`
+- Implemented unified padding system with CSS variables
+- Fixed mobile services section layout (removed brown gaps, updated background to #efe9dd)
+- Updated website background color to #efe0cb (Velvet Cream)
+- Added navbar scroll background color change to #efe9dd
+
+### December 29, 2025
 - Updated hero section images
 - Updated services section with unique images
 - Updated products section with product images
