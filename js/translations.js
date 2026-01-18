@@ -17,7 +17,7 @@ var translations = {
     
     // About/Ritual Section
     theRitualOfBeingCrownedTitle: "THE RITUAL OF BEING CROWNED",
-    aboutRitualText: "Tiara Beauty is a Saudi-born beauty brand built on the belief that beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, Tiara creates experiences that honor the mind, body, and spirit—offering beauty that is felt as much as it is seen. Evolving from a highly regarded salon and spa in Al Khobar, we redefine modern beauty through timeless elegance, clean innovation, and refined rituals that blend global standards with cultural pride.",
+    aboutRitualText: "Tiara Beauty is a Saudi-born beauty brand where beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, we create experiences that honor mind, body, and spirit, offering beauty that is felt as much as it is seen. Evolving from a highly regarded beauty studio and spa in Al Khobar, we blend global standards with cultural pride, delivering expert-led services that prioritize long-term care over fast trends.",
     viewMore: "VIEW more",
     
     // Services Section
@@ -28,7 +28,7 @@ var translations = {
     beautyRituals: "Beauty Rituals",
     
     // Philosophy Section
-    salon: "SALON",
+    beautyStudio: "BEAUTY STUDIO",
     spa: "SPA",
     facials: "FACIALS",
     styling: "STYLING",
@@ -56,6 +56,7 @@ var translations = {
     copyright: "© Tiara 2025, All Rights Reserved.",
     copyrightMenu: "© TIARA, 2025",
     copyrightHero: "© Tiara 2025",
+    acceptedPaymentMethods: "Accepted Payment Methods",
     
     // Menu Overlay
     menuQuote: "At Tiara, beauty is not applied — it is refined. Each ritual is shaped by trained hands, quiet intention, and elements chosen to honor the skin and the spirit.",
@@ -63,9 +64,9 @@ var translations = {
     
     // About Page
     aboutTiaraBeauty: "ABOUT TIARA BEAUTY",
-    aboutPageIntro: "Tiara Beauty is a Saudi-born beauty brand built on the belief that beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, Tiara creates experiences that honor the mind, body, and spirit—offering beauty that is felt as much as it is seen. Evolving from a highly regarded salon and spa in Al Khobar, Tiara Beauty redefines modern beauty through a philosophy of timeless elegance, clean innovation, and refined rituals. The brand blends global standards with cultural pride, delivering expert-led services and thoughtfully designed experiences that prioritize long-term care over fast trends.",
+    aboutPageIntro: "Tiara Beauty is a Saudi-born beauty brand where beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, we create experiences that honor mind, body, and spirit—beauty that is felt as much as it is seen. Evolving from a highly regarded beauty studio and spa in Al Khobar, we blend global standards with cultural pride, delivering expert-led services that prioritize long-term care over fast trends.",
     theRootOfOurIdentity: "THE ROOT OF OUR IDENTITY",
-    rootOfIdentityText: "The banana tree is more than a symbol—it is part of our origin. Rooted in local courtyards, it represents continuity, care, and quiet rituals passed through generations. From this heritage, Tiara chose the banana leaf as its mark—a reminder that beauty is grown with intention, not rushed. At its core, Tiara Beauty stands for quiet confidence and modern sovereignty—where self-care is elevated into meaningful rituals and personal well-being is treated with reverence.",
+    rootOfIdentityText: "The banana tree is our origin story. Rooted in local courtyards, it represents continuity, care, and quiet rituals passed through generations. We chose the banana leaf as our mark—a reminder that beauty is grown with intention, not rushed. At our core, we stand for quiet confidence and modern sovereignty, where self-care becomes meaningful ritual and personal well-being is treated with reverence.",
     meetTheTiaraArtisans: "Meet the Tiara Artisans",
     artisansDescription: "Behind every Tiara experience is a team of passionate artisans—stylists, therapists, and skincare specialists dedicated to perfecting the art of care. Their expertise and intuition bring our philosophy to life, creating experiences grounded in calm, intentional practice, and nurturing attention. Each member of the Tiara Artisans team embodies our values: calm, intentional, nurturing, and culturally rooted—delivering beauty that honors both tradition and innovation.",
     
@@ -112,7 +113,7 @@ var translations = {
     
     // About/Ritual Section
     theRitualOfBeingCrownedTitle: "طقوس التتويج",
-    aboutRitualText: "تيارا هي علامة تجارية للجمال ولدت في السعودية، مبنية على الاعتقاد بأن الجمال ليس أداءً، بل طقوس. متجذرة في العناية المتعمدة والخبرة التقنية والذكاء العاطفي، تخلق تيارا تجارب تكرم العقل والجسد والروح—تقدم جمالاً يُشعر به بقدر ما يُرى. متطورة من صالون وسبا مرموق في الخبر، نعيد تعريف الجمال الحديث من خلال الأناقة الخالدة والابتكار النظيف والطقوس المكررة التي تمزج المعايير العالمية بالفخر الثقافي.",
+    aboutRitualText: "تيارا للجمال هي علامة تجارية للجمال ولدت في السعودية، حيث الجمال ليس أداءً، بل طقوس. متجذرة في العناية المتعمدة والخبرة التقنية والذكاء العاطفي، نخلق تجارب تكرم العقل والجسد والروح—جمالاً يُشعر به بقدر ما يُرى. متطورة من استوديو جمال وسبا مرموق في الخبر، نمزج المعايير العالمية بالفخر الثقافي، ونقدم خدمات يقودها الخبراء تعطي الأولوية للعناية طويلة الأمد على الاتجاهات السريعة.",
     viewMore: "عرض المزيد",
     
     // Services Section
@@ -123,7 +124,7 @@ var translations = {
     beautyRituals: "طقوس الجمال",
     
     // Philosophy Section
-    salon: "الصالون",
+    beautyStudio: "استوديو الجمال",
     spa: "السبا",
     facials: "الوجه",
     styling: "التصفيف",
@@ -151,6 +152,7 @@ var translations = {
     copyright: "© تيارا 2025، جميع الحقوق محفوظة.",
     copyrightMenu: "© تيارا، 2025",
     copyrightHero: "© تيارا 2025",
+    acceptedPaymentMethods: "طرق الدفع المقبولة",
     
     // Menu Overlay
     menuQuote: "في تيارا، الجمال لا يُطبق — بل يُكرر. كل طقس يُشكل بأيدي مدربة ونية هادئة وعناصر مختارة لتكريم البشرة والروح.",
@@ -158,9 +160,9 @@ var translations = {
     
     // About Page
     aboutTiaraBeauty: "عن تيارا للجمال",
-    aboutPageIntro: "تيارا للجمال هي علامة تجارية للجمال ولدت في السعودية، مبنية على الاعتقاد بأن الجمال ليس أداءً، بل طقوس. متجذرة في العناية المتعمدة والخبرة التقنية والذكاء العاطفي، تخلق تيارا تجارب تكرم العقل والجسد والروح—تقدم جمالاً يُشعر به بقدر ما يُرى. متطورة من صالون وسبا مرموق في الخبر، تعيد تيارا للجمال تعريف الجمال الحديث من خلال فلسفة الأناقة الخالدة والابتكار النظيف والطقوس المكررة. تمزج العلامة التجارية المعايير العالمية بالفخر الثقافي، وتقدم خدمات يقودها الخبراء وتجارب مصممة بعناية تعطي الأولوية للعناية طويلة الأمد على الاتجاهات السريعة.",
+    aboutPageIntro: "تيارا للجمال هي علامة تجارية للجمال ولدت في السعودية، حيث الجمال ليس أداءً، بل طقوس. متجذرة في العناية المتعمدة والخبرة التقنية والذكاء العاطفي، نخلق تجارب تكرم العقل والجسد والروح—جمالاً يُشعر به بقدر ما يُرى. متطورة من استوديو جمال وسبا مرموق في الخبر، نمزج المعايير العالمية بالفخر الثقافي، ونقدم خدمات يقودها الخبراء تعطي الأولوية للعناية طويلة الأمد على الاتجاهات السريعة.",
     theRootOfOurIdentity: "جذور هويتنا",
-    rootOfIdentityText: "شجرة الموز أكثر من مجرد رمز—إنها جزء من أصلنا. متجذرة في الأفنية المحلية، تمثل الاستمرارية والعناية والطقوس الهادئة التي تنتقل عبر الأجيال. من هذا التراث، اختارت تيارا ورقة الموز كعلامة لها—تذكير بأن الجمال يُزرع بقصد، وليس على عجل. في جوهرها، تيارا للجمال تدافع عن الثقة الهادئة والسيادة الحديثة—حيث تُرفع العناية الذاتية إلى طقوس ذات معنى ويُعامل الرفاه الشخصي باحترام.",
+    rootOfIdentityText: "شجرة الموز هي قصة أصلنا. متجذرة في الأفنية المحلية، تمثل الاستمرارية والعناية والطقوس الهادئة التي تنتقل عبر الأجيال. اخترنا ورقة الموز كعلامة لنا—تذكير بأن الجمال يُزرع بقصد، وليس على عجل. في جوهرنا، ندافع عن الثقة الهادئة والسيادة الحديثة، حيث تصبح العناية الذاتية طقوساً ذات معنى ويُعامل الرفاه الشخصي باحترام.",
     meetTheTiaraArtisans: "تعرف على حرفيي تيارا",
     artisansDescription: "وراء كل تجربة تيارا فريق من الحرفيين المتحمسين—مصففي الشعر والمعالجين وأخصائيي العناية بالبشرة المكرسين لإتقان فن العناية. خبرتهم وحدسهم يجلبان فلسفتنا إلى الحياة، ويخلقان تجارب قائمة على الهدوء والممارسة المتعمدة والاهتمام الرعوي. كل عضو في فريق حرفيي تيارا يجسد قيمنا: الهدوء، المتعمد، الرعوي، والمتجذر ثقافياً—يقدم جمالاً يكرم كل من التقليد والابتكار.",
     
