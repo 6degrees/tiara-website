@@ -21,6 +21,14 @@
   <meta name="theme-color" content="#efe0cb">
   <meta name="color-scheme" content="light">
   <meta content="Webflow" name="generator">
+  <!-- Base URL for GitHub Pages (only on GitHub Pages, not localhost) -->
+  <script>
+    if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+      var base = document.createElement('base');
+      base.href = '/tiara-website/';
+      document.head.insertBefore(base, document.head.firstChild);
+    }
+  </script>
   <!-- SEO Meta Tags -->
   <meta name="keywords" content="Tiara Beauty, beauty studio, spa, Al Khobar, Saudi Arabia, beauty treatments, facial treatments, hair styling, beauty rituals, luxury beauty, Saudi beauty brand">
   <meta name="author" content="Tiara Beauty">
