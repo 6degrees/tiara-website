@@ -1601,6 +1601,10 @@ blockquote {
 }
 
 /* Founder's Message (About Page) - image + text split */
+.founder-message-section {
+  margin-bottom: 4rem;
+}
+
 .founder-message-image-wrap {
   width: 100%;
   min-height: 100%;
@@ -1670,6 +1674,9 @@ blockquote {
 }
 
 @media screen and (max-width: 991px) {
+  .founder-message-section {
+    margin-bottom: 3rem;
+  }
   .founder-message-img {
     min-height: 320px;
     max-height: 500px;
@@ -1700,11 +1707,6 @@ html.rtl .partners-title {
 html[dir="rtl"] .partners-logos,
 html.rtl .partners-logos {
   justify-content: center;
-}
-
-/* Hidden: THE ROOT OF OUR IDENTITY section (content kept in HTML, show by removing this rule) */
-.root-of-identity-section {
-  display: none !important;
 }
 
 /* Our Partners in Beauty */
