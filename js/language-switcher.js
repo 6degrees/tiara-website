@@ -32,11 +32,63 @@
       document.body.classList.remove('rtl');
     }
     
+    // Close menu overlay if open (especially important on mobile)
+    const menu = document.querySelector('.menu');
+    if (menu) {
+      menu.style.display = 'none';
+      menu.classList.remove('w--open');
+    }
+    
+    // Remove any Webflow menu open classes
+    document.body.classList.remove('w-nav-menu-open');
+    document.documentElement.classList.remove('w-nav-menu-open');
+    
+    // Ensure page content is visible after language change
+    const pageIn = document.querySelector('.page-in');
+    if (pageIn) {
+      pageIn.style.opacity = '1';
+      pageIn.style.visibility = 'visible';
+      // Don't override display - let CSS handle it
+    }
+    
     // Update all translatable elements
     updateTranslations(lang);
     
     // Update language switcher buttons
     updateLanguageSwitcher(lang);
+    
+    // Force visibility of main content sections (only opacity/visibility, preserve display)
+    setTimeout(function() {
+      const mainContent = document.querySelector('main');
+      if (mainContent) {
+        mainContent.style.opacity = '1';
+        mainContent.style.visibility = 'visible';
+        // Don't override display - let CSS handle it
+      }
+      
+      // Ensure all sections are visible
+      document.querySelectorAll('section').forEach(function(section) {
+        section.style.opacity = '1';
+        section.style.visibility = 'visible';
+        // Don't override display - let CSS handle it
+      });
+      
+      // Ensure header is visible
+      const header = document.querySelector('.header');
+      if (header) {
+        header.style.opacity = '1';
+        header.style.visibility = 'visible';
+        // Don't override display - let CSS handle it
+      }
+      
+      // Ensure footer is visible
+      const footer = document.querySelector('.footer');
+      if (footer) {
+        footer.style.opacity = '1';
+        footer.style.visibility = 'visible';
+        // Don't override display - let CSS handle it
+      }
+    }, 10);
   }
   
   // Update all translatable content
