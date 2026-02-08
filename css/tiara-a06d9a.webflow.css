@@ -1182,7 +1182,7 @@ blockquote {
 }
 
 .home-section-01-left {
-  background-image: linear-gradient(#00000080, #0000 10%), url('../images/hero.png');
+  background-image: linear-gradient(#00000080, #0000 10%), url('../images/Visual-1.png');
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -1190,7 +1190,7 @@ blockquote {
 }
 
 .home-section-01-right {
-  background-image: url('../images/hero.png');
+  background-image: url('../images/Visual-1.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1601,6 +1601,10 @@ blockquote {
 }
 
 /* Founder's Message (About Page) - image + text split */
+.root-of-identity-section {
+  margin-bottom: 4rem;
+}
+
 .founder-message-section {
   margin-bottom: 4rem;
 }
@@ -1674,6 +1678,9 @@ blockquote {
 }
 
 @media screen and (max-width: 991px) {
+  .root-of-identity-section {
+    margin-bottom: 3rem;
+  }
   .founder-message-section {
     margin-bottom: 3rem;
   }
@@ -1688,10 +1695,72 @@ blockquote {
   }
 }
 
+/* Founder message: full RTL support - flip layout and align right */
+html[dir="rtl"] .founder-message-section .image-tab-inner,
+html.rtl .founder-message-section .image-tab-inner {
+  direction: rtl;
+  column-gap: 48px; /* space between image and text */
+}
+
+/* RTL: keep image left, text right (natural RTL reading order) and fix spacing */
+html[dir="rtl"] .founder-message-section .image-tab-inner-left,
+html.rtl .founder-message-section .image-tab-inner-left {
+  order: 1;
+}
+
+/* RTL: text column flush to right edge; gap with image from grid column-gap; center text vertically */
+html[dir="rtl"] .founder-message-section .image-tab-inner-right,
+html.rtl .founder-message-section .image-tab-inner-right {
+  order: 2;
+  align-items: stretch;
+  justify-content: center;
+  padding-right: 0;
+  padding-left: 0; /* gap between text and image is from .image-tab-inner column-gap */
+}
+
+/* RTL: one alignment for all – block fills column, no centering margin, all content right-aligned */
 html[dir="rtl"] .founder-message-section .founder-message-group,
 html.rtl .founder-message-section .founder-message-group {
-  text-align: right;
-  align-items: flex-end;
+  direction: rtl;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+  align-items: flex-end !important;
+}
+
+/* RTL: every block (title, body, signature) same width and right alignment */
+html[dir="rtl"] .founder-message-section .founder-message-group > *,
+html.rtl .founder-message-section .founder-message-group > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: right !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* RTL: every element inside founder message aligns right */
+html[dir="rtl"] .founder-message-section .founder-message-group *,
+html.rtl .founder-message-section .founder-message-group * {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .founder-message-section .founder-message-group .text--body-large,
+html[dir="rtl"] .founder-message-section .founder-message-group .founder-message-title,
+html[dir="rtl"] .founder-message-section .founder-message-group .text--heading-02,
+html[dir="rtl"] .founder-message-section .founder-message-group .founder-message-name,
+html[dir="rtl"] .founder-message-section .founder-message-group .founder-message-role,
+html[dir="rtl"] .founder-message-section .founder-message-group .founder-message-signoff,
+html[dir="rtl"] .founder-message-section .founder-message-group .text-body-small,
+html.rtl .founder-message-section .founder-message-group .text--body-large,
+html.rtl .founder-message-section .founder-message-group .founder-message-title,
+html.rtl .founder-message-section .founder-message-group .text--heading-02,
+html.rtl .founder-message-section .founder-message-group .founder-message-name,
+html.rtl .founder-message-section .founder-message-group .founder-message-role,
+html.rtl .founder-message-section .founder-message-group .founder-message-signoff,
+html.rtl .founder-message-section .founder-message-group .text-body-small {
+  text-align: right !important;
 }
 
 html[dir="rtl"] .partners-container,
@@ -2056,8 +2125,9 @@ html.rtl .partners-logos {
   width: 50%;
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: -24px;
   left: 50%;
+  right: auto;
   padding-left: 0;
   order: 2;
 }
@@ -2700,6 +2770,10 @@ html.rtl .product-name {
   position: fixed;
   inset: 0%;
   overflow: hidden;
+}
+
+.menu.w--open {
+  display: grid !important;
 }
 
 .menu-left {
@@ -3614,7 +3688,7 @@ html.rtl .menu-text {
   }
 
   .home-section-01-right {
-    background-image: linear-gradient(#00000080, #0000 20%), url('../images/hero.png');
+    background-image: linear-gradient(#00000080, #0000 20%), url('../images/Visual-1.png');
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -4507,7 +4581,7 @@ html.rtl .menu-text {
 
 @media screen and (max-width: 479px) {
   .home-section-01-right {
-    background-image: linear-gradient(#00000080, #0000 20%), url('../images/hero.png');
+    background-image: linear-gradient(#00000080, #0000 20%), url('../images/Visual-1.png');
   }
 
   .product-list {
@@ -4531,6 +4605,9 @@ html.rtl .menu-text {
   
   .service-overlay-content {
     padding: 24px 20px;
+    max-height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   
   .home-section-02-text-group .text-label {
@@ -4549,8 +4626,6 @@ html.rtl .menu-text {
   
   .service-subservices li {
     font-size: 15px;
-    min-height: 440px;
-    max-height: 440px;
   }
   
   .image-tab-thumbnail {
@@ -4607,10 +4682,8 @@ html.rtl .menu-text {
   
   .service-subservices li {
     font-size: 16px;
-    gap: 12px;
     margin: 0 !important;
     padding: 0 !important;
-    overflow: hidden;
     border: none;
   }
 
@@ -4989,12 +5062,13 @@ html.rtl .image-tab {
 html[dir="rtl"] .image-tab-right,
 html.rtl .image-tab-right {
   position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 68px;
-  width: 100%;
+  bottom: -24px;
+  left: 50%;
+  right: auto;
+  width: 50%;
   flex-direction: row;
   justify-content: center;
+  overflow: visible;
 }
 
 html[dir="rtl"] .image-tab-left,
@@ -5034,8 +5108,25 @@ html.rtl .text-label {
   text-align: right;
 }
 
-html[dir="rtl"] .image-tab-text-group,
-html.rtl .image-tab-text-group {
+/* Arabic: center-align content in philosophy section (exclude founder message) */
+html[dir="rtl"] .image-tab-text-group:not(.founder-message-group),
+html.rtl .image-tab-text-group:not(.founder-message-group) {
+  text-align: center;
+  align-items: center;
+}
+
+html[dir="rtl"] .image-tab-text-group:not(.founder-message-group) .text--body-large,
+html[dir="rtl"] .image-tab-text-group:not(.founder-message-group) .text--heading-01,
+html[dir="rtl"] .image-tab-text-group:not(.founder-message-group) .text-label,
+html.rtl .image-tab-text-group:not(.founder-message-group) .text--body-large,
+html.rtl .image-tab-text-group:not(.founder-message-group) .text--heading-01,
+html.rtl .image-tab-text-group:not(.founder-message-group) .text-label {
+  text-align: center;
+}
+
+/* Center "استوديو الجمال" / Beauty Studio label in philosophy section (Arabic) */
+html[dir="rtl"] .image-tab-inner-right .text-label.image-tab-title,
+html.rtl .image-tab-inner-right .text-label.image-tab-title {
   text-align: center;
 }
 

@@ -35,8 +35,8 @@
     // Close menu overlay if open (especially important on mobile)
     const menu = document.querySelector('.menu');
     if (menu) {
-      menu.style.display = 'none';
       menu.classList.remove('w--open');
+      menu.style.removeProperty('display'); // Let CSS control visibility so menu can open again
     }
     
     // Remove any Webflow menu open classes
@@ -109,6 +109,12 @@
         }
       }
     });
+
+    // Update page title when this page has a title key (e.g. team page)
+    var titleKey = document.body.getAttribute('data-page-title-key');
+    if (titleKey && t[titleKey]) {
+      document.title = t[titleKey];
+    }
   }
   
   // Update language switcher UI
@@ -249,6 +255,20 @@
       }, 300);
     }
   });
+
+  // Ensure menu opens on mobile: Webflow interaction may only bind to desktop trigger.
+  // Any .menu-link click (including mobile hamburger) opens the overlay.
+  document.addEventListener('click', function(e) {
+    var trigger = e.target.closest('.menu-link');
+    if (!trigger) return;
+    var menu = document.querySelector('.menu');
+    if (!menu) return;
+    if (!menu.classList.contains('w--open')) {
+      e.preventDefault();
+      menu.classList.add('w--open');
+      document.body.classList.add('w-nav-menu-open');
+    }
+  }, true);
   
   // Expose setLanguage for external use
   window.TiaraLanguage = {
