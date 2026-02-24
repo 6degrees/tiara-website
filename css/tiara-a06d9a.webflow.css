@@ -2075,6 +2075,23 @@ html.rtl .partners-logos {
   padding-left: 0;
 }
 
+.service-overlay-book-btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  border: 2px solid var(--beige);
+  color: var(--beige);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.service-overlay-book-btn:hover {
+  background-color: var(--beige);
+  color: var(--brown);
+}
+
 .product-button {
   z-index: 1;
   grid-column-gap: 8px;
@@ -2186,6 +2203,26 @@ html.rtl .partners-logos {
   display: flex;
 }
 
+/* Beauty Studio / Philosophy section: more space and bolder font */
+.home-section-04 .image-tab-inner-right {
+  gap: 28px;
+  row-gap: 28px;
+}
+.home-section-04 .image-tab-text-group:not(.founder-message-group) {
+  grid-row-gap: 24px;
+  margin-top: 8px;
+}
+.home-section-04 .image-tab-text-group:not(.founder-message-group) .text--body-large {
+  font-weight: 600;
+  line-height: 1.75;
+}
+.home-section-04 .text-label.image-tab-title {
+  font-weight: 700;
+}
+.home-section-04 .text-label.image-tab-link {
+  font-weight: 700;
+}
+
 .image-tab-link {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
@@ -2259,6 +2296,24 @@ html.rtl .partners-logos {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+/* View All Team Members CTA - more visible */
+.cta-view-team .text-label {
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+.cta-view-team {
+  padding: 10px 0;
+  border-bottom: 2px solid var(--brown);
+}
+.cta-view-team:hover {
+  border-bottom-color: var(--accent-green);
+}
+.cta-view-team .button-circle {
+  width: 28px;
+  height: 28px;
 }
 
 .home-section-06-title {
@@ -2623,6 +2678,29 @@ html.rtl .team-member-quote {
   display: flex;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.product-tag.coming-soon-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  padding: 6px 14px;
+  background-color: var(--brown);
+  color: var(--beige);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+html[dir="rtl"] .product-tag.coming-soon-tag,
+html.rtl .product-tag.coming-soon-tag {
+  right: auto;
+  left: 12px;
 }
 
 .product-name {
@@ -4025,6 +4103,29 @@ html.rtl .menu-text {
 
   .home-section-06-desc {
     margin-top: 28px;
+  }
+
+  /* Products section: full-width rows and center text on mobile */
+  #products .home-section-06-title,
+  #products .home-section-06-desc {
+    grid-column: 1 / -1;
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--padding-horizontal-mobile);
+    padding-right: var(--padding-horizontal-mobile);
+  }
+  #products .home-section-06-title {
+    align-items: center;
+  }
+  #products .home-section-06-title h1,
+  #products .home-section-06-desc .text--body-large,
+  #products .home-section-06-desc p {
+    text-align: center !important;
+  }
+  #products .journal-list-wrap {
+    grid-column: 1 / -1;
   }
   
   .home-section-06-cta {
