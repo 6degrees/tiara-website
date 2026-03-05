@@ -456,7 +456,7 @@ img {
   <!-- Philosophy/Beauty Studio & Spa Section - Tabbed section showcasing Tiara's beauty studio and spa experience -->
   <section class="home-section-04">
     <div class="home-section-04-container">
-      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="image-tab w-tabs" style="display: flex; justify-content: center;">
+      <div id="philosophy-tabs" data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="image-tab w-tabs" style="display: flex; justify-content: center;">
         <div class="image-tab-right w-tab-menu">
           <a data-w-tab="Tab 1" class="image-tab-link w-inline-block w-tab-link w--current"><img loading="lazy" sizes="(max-width: 661px) 100vw, 661px" srcset="images/salon-spa/2.webp 500w, images/salon-spa/2.webp 661w" alt="Tiara Beauty Studio - Nails Area" src="images/salon-spa/2.webp" class="image-tab-thumbnail">
             <div class="text-label image-tab-link" data-i18n="nails"><strong>NAILS</strong></div>
@@ -619,6 +619,23 @@ img {
         headerContainer.classList.remove('scrolled');
       }
     });
+
+    // Auto-rotate Philosophy tabs (NAILS, STYLING, SPA) every 7 seconds
+    (function() {
+      var tabContainer = document.getElementById('philosophy-tabs');
+      if (!tabContainer) return;
+      var tabLinks = tabContainer.querySelectorAll('.w-tab-menu .w-tab-link');
+      if (tabLinks.length === 0) return;
+      setInterval(function() {
+        var current = tabContainer.querySelector('.w-tab-menu .w-tab-link.w--current');
+        var currentIndex = -1;
+        for (var i = 0; i < tabLinks.length; i++) {
+          if (tabLinks[i] === current) { currentIndex = i; break; }
+        }
+        var nextIndex = (currentIndex + 1) % tabLinks.length;
+        tabLinks[nextIndex].click();
+      }, 7000);
+    })();
   </script>
 </body>
 </html>
