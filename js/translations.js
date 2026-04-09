@@ -15,7 +15,7 @@ const translations = {
     beautyAsRitual: 'BEAUTY AS RITUAL',
     theRitualOfBeingCrowned: 'THE RITUAL OF BEING <br>CROWNED',
     heroSubtitle:
-      'Tiara redefines self-care as a quiet ceremony، where beauty, balance, and authenticity meet.',
+      'Tiara redefines self-care as a quiet ceremony, where beauty, balance, and authenticity meet.',
 
     // About/Ritual Section
     theRitualOfBeingCrownedTitle: 'THE RITUAL OF BEING CROWNED',
@@ -200,7 +200,7 @@ const translations = {
     about: 'عن',
     services: 'الخدمات',
     products: 'المنتجات',
-    contact: 'اتصل بنا',
+    contact: 'تواصلي معنا',
 
     // Hero Section
     beautyAsRitual: 'الجمال كلحظة خاصة',
@@ -271,7 +271,7 @@ const translations = {
     // Products Section
     ourProducts: 'منتجاتنا',
     productsDescription:
-      'منتجات الرموش المختارة بعناية التي تمتد بطقوس تيارا إلى روتينك اليومي. كل منتج مصنوع بمكونات نقية وعناية متعمدة.',
+      'منتجات الرموش المختارة بعناية، تحمل طقوس تيارا إلى روتينكِ اليومي. كل منتج مصنوع بمكونات نقية وعناية مقصودة.',
     comingSoon: 'قريباً',
     productLashes: 'الرموش',
     productGlue: 'الغراء الأساسي',
@@ -292,7 +292,7 @@ const translations = {
 
     // Menu Overlay
     menuQuote:
-      'في تيارا، الجمال لا يُطبق — بل يُكرر. كل طقس يُشكل بأيدي مدربة ونية هادئة وعناصر مختارة لتكريم البشرة والروح.',
+      'في تيارا، الجمال لا يُطبق — بل يُصقَل. كل طقس يُشكّل بأيدٍ مدرّبة ونيّة هادئة وعناصر مختارة لتكريم البشرة والروح.',
     close: 'إغلاق',
 
     // About Page
@@ -320,7 +320,7 @@ const translations = {
       'في تيارا، لا نتبع الموضات؛ نحن نضع المعايير، صانعين كل تجربة كجوهرة تاج يُشكّلها الغرض والدقة. تيارا علامة سعودية تعكس طموح رؤية 2030 والتميز والابتكار والأثر العالمي. مرحباً بكم في إمبراطورية الجمال التي أعددتها لكم.',
     founderMessageSignoff: 'بفخر من القلب،',
     founderMessageRole: 'الرئيس التنفيذي ومؤسسة تيارا للجمال',
-    teamSaraRole: 'المديرة العامة — «الجمال بقادة الرؤية والتمكين»',
+    teamSaraRole: 'المديرة العامة — «الجمال بقيادة الرؤية والتمكين»',
     teamMonicaRole: 'مديرة العمليات — «تحويل الرؤية إلى واقع»',
 
     // Team Page – member quotes (Arabic)
@@ -346,17 +346,17 @@ const translations = {
     teamQuote21: '«كل ظفر مهم»',
     teamQuote22: '«الدقة والكمال»',
     teamQuote23: '«دقة بصمت»',
-    teamQuote24: '«النتائج تتحدث بصوت أعلى عندما تكون هي المسؤولة.»',
+    teamQuote24: '«النتائج تتحدث بصوت أعلى حين تكون هي المسؤولة.»',
     teamQuote25: '«كل مجموعة تحكي قصة.»',
     teamQuote26: '«تألقي اليوم: مجموعة تلو الأخرى.»',
 
     // Contact Page
     whereBeautyMeetsYou: 'حيث يلتقي الجمال<br>بك',
     findTiarasSanctuaries:
-      'اكتشف ملاذات تيارا في جميع أنحاء المملكة، كل منها مصمم بالهدوء والأناقة والانسجام الحسي.',
+      'اكتشفي ملاذات تيارا في جميع أنحاء المملكة، كل منها مصمم بالهدوء والأناقة والانسجام الحسي.',
     tiaraBeautyStudio: 'استوديو تيارا للجمال',
     tiaraTheSpa: 'سبا تيارا',
-    bookAppointment: 'احجز موعد',
+    bookAppointment: 'احجزي موعدًا',
 
     // 404 Page
     pageNotFound: 'الصفحة<br>غير موجودة',
@@ -378,7 +378,7 @@ const translations = {
     yourRights: 'حقوقك',
     privacyYourRights:
       'لديك الحق في: الوصول إلى معلوماتك الشخصية، وطلب تصحيح البيانات غير الدقيقة، وطلب حذف معلوماتك، والاعتراض على معالجة بياناتك، وسحب الموافقة على الاتصالات التسويقية. لممارسة هذه الحقوق، يرجى الاتصال بنا باستخدام المعلومات المقدمة أدناه.',
-    contactUs: 'اتصل بنا',
+    contactUs: 'تواصلي معنا',
     privacyContactUs:
       'إذا كان لديك أسئلة حول سياسة الخصوصية هذه أو ترغب في ممارسة حقوقك، يرجى الاتصال بنا على:<br><br>تيارا للجمال<br>6386 طريق الأمير فيصل بن فهد<br>الحزام الأخضر، الخبر 34436<br>البريد الإلكتروني: info@tiara.com<br><br>آخر تحديث: 2025',
   },
