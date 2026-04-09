@@ -1,13 +1,31 @@
 {
   "name": "tiara-website",
   "version": "1.0.0",
-  "description": "Tiara Beauty Website",
+  "description": "Tiara Beauty Website - Luxury beauty studio and spa in Al Khobar, Saudi Arabia",
   "scripts": {
     "start": "http-server -p 3004 -o",
-    "dev": "http-server -p 3004 -o"
+    "dev": "http-server -p 3004 -o",
+    "lint": "eslint js/ --ignore-pattern webflow.js",
+    "lint:fix": "eslint js/ --ignore-pattern webflow.js --fix",
+    "format": "prettier --write \"js/**/*.js\"",
+    "format:check": "prettier --check \"js/**/*.js\"",
+    "build:css": "cleancss -o dist/css/tiara.min.css css/normalize.css css/webflow.css css/tiara-a06d9a.webflow.css",
+    "build:js": "terser js/translations.js js/language-switcher.js js/products-carousel.js -o dist/js/tiara.bundle.min.js --compress --mangle",
+    "build:js:webflow": "terser js/webflow.js -o dist/js/webflow.min.js --compress --mangle",
+    "build:html": "node scripts/build-html.js",
+    "build:assets": "node scripts/copy-assets.js",
+    "build": "npm run prebuild && npm run build:assets && npm run build:css && npm run build:js && npm run build:js:webflow && npm run build:html",
+    "prebuild": "node -e \"const fs=require('fs'); ['dist/css','dist/js','dist/fonts','dist/images'].forEach(d=>{if(!fs.existsSync(d))fs.mkdirSync(d,{recursive:true})})\"",
+    "clean": "node -e \"const fs=require('fs'); fs.rmSync('dist',{recursive:true,force:true})\""
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "clean-css-cli": "^5.6.3",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "html-minifier-terser": "^7.2.0",
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.8.1",
+    "terser": "^5.46.1"
   }
 }
-
