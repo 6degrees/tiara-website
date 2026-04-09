@@ -156,6 +156,9 @@ const translations = {
     teamQuote21: '"Every nail matters"',
     teamQuote22: '"Precision and Perfection"',
     teamQuote23: '"Quietly precise"',
+    teamQuote24: '"Results speak louder when she is in charge."',
+    teamQuote25: '"Every set tells a story."',
+    teamQuote26: '"Slay the day: one set at a time."',
 
     // Contact Page
     whereBeautyMeetsYou: 'Where Beauty <br>Meets You',
@@ -343,6 +346,9 @@ const translations = {
     teamQuote21: '«كل ظفر مهم»',
     teamQuote22: '«الدقة والكمال»',
     teamQuote23: '«دقة بصمت»',
+    teamQuote24: '«النتائج تتحدث بصوت أعلى عندما تكون هي المسؤولة.»',
+    teamQuote25: '«كل مجموعة تحكي قصة.»',
+    teamQuote26: '«تألقي اليوم: مجموعة تلو الأخرى.»',
 
     // Contact Page
     whereBeautyMeetsYou: 'حيث يلتقي الجمال<br>بك',
