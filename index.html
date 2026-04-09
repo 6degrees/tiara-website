@@ -642,7 +642,11 @@ img {
           if (tabLinks[i] === current) { currentIndex = i; break; }
         }
         var nextIndex = (currentIndex + 1) % tabLinks.length;
+        // Save scroll position before click to prevent auto-scrolling
+        var scrollX = window.scrollX;
+        var scrollY = window.scrollY;
         tabLinks[nextIndex].click();
+        window.scrollTo(scrollX, scrollY);
       }, 7000);
     })();
   </script>
