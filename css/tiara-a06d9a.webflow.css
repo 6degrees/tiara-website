@@ -2315,22 +2315,26 @@ html.rtl .partners-logos {
   padding-bottom: 0;
 }
 
-/* View All Team Members CTA - more visible */
+/* View All Team Members CTA - solid fill, outlined on hover */
+.cta-view-team {
+  display: inline-block !important;
+  padding: 16px 32px !important;
+  border: 2px solid var(--brown) !important;
+  background-color: var(--brown) !important;
+  color: var(--beige) !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cta-view-team:hover {
+  background-color: transparent !important;
+  color: var(--brown) !important;
+}
 .cta-view-team .text-label {
   font-size: 16px;
   letter-spacing: 0.12em;
   font-weight: 700;
-}
-.cta-view-team {
-  padding: 10px 0;
-  border-bottom: 2px solid var(--brown);
-}
-.cta-view-team:hover {
-  border-bottom-color: var(--accent-green);
-}
-.cta-view-team .button-circle {
-  width: 28px;
-  height: 28px;
 }
 
 .home-section-06-title {
