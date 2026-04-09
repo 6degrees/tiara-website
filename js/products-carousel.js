@@ -1,5 +1,5 @@
 // Products Carousel Navigation
-(function() {
+(function () {
   'use strict';
 
   function initProductsCarousel() {
@@ -35,22 +35,21 @@
     function scrollProducts(direction) {
       const scrollAmount = carousel.clientWidth * 0.8; // Scroll 80% of visible width
       const currentScroll = carousel.scrollLeft;
-      const targetScroll = direction === 'left' 
-        ? currentScroll - scrollAmount 
-        : currentScroll + scrollAmount;
+      const targetScroll =
+        direction === 'left' ? currentScroll - scrollAmount : currentScroll + scrollAmount;
 
       carousel.scrollTo({
         left: targetScroll,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
 
     // Event listeners
-    leftArrow.addEventListener('click', function() {
+    leftArrow.addEventListener('click', function () {
       scrollProducts('left');
     });
 
-    rightArrow.addEventListener('click', function() {
+    rightArrow.addEventListener('click', function () {
       scrollProducts('right');
     });
 
@@ -58,7 +57,7 @@
     carousel.addEventListener('scroll', updateArrowStates);
 
     // Update arrow states on resize
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
       updateArrowStates();
     });
 
@@ -73,4 +72,3 @@
     initProductsCarousel();
   }
 })();
-
