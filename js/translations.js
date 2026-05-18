@@ -123,7 +123,7 @@ const translations = {
     founderMessageGreeting:
       'To the Tiara Family, our Valued Guests, Partners, and the Beauty Community,',
     founderMessage1:
-      'I built Tiara on the belief that empowered women create extraordinary things and leave a word of legacy — a word of impact.',
+      "I built Tiara on the belief that empowered women create extraordinary things and leave an impact that redefines what's possible.",
     founderMessage2:
       'What began during COVID with just two team members has grown into a global force of over 50 professionals from more than 19 different nationalities, all speaking one language, the language of beauty.',
     founderMessage3:
@@ -313,7 +313,7 @@ const translations = {
     founderMessageTitle: 'رسالة من المؤسس',
     founderMessageGreeting: 'إلى عائلة تيارا، ضيوفنا الكرام، شركاؤنا، ومجتمع الجمال،',
     founderMessage1:
-      'بنيت تيارا على الإيمان بأن المرأة المتمكنة تخلق أشياء استثنائية وتترك كلمة إرثاً بكلمة أثر.',
+      'بنيت تيارا على الإيمان بأن المرأة المُتمكّنة تخلق أشياء استثنائية وتترك أثراً يعيد تعريف الممكن.',
     founderMessage2:
       'ما بدأ خلال جائحة كوفيد بعضوَي فريق فقط نما إلى قوة عالمية من أكثر من 50 محترفاً من اكثر من ١٩ جنسية مختلفة، يتحدثون لغة واحدة، لغة الجمال.',
     founderMessage3:
