@@ -13,12 +13,12 @@ const translations = {
 
     // Hero Section
     beautyAsRitual: 'BEAUTY AS RITUAL',
-    theRitualOfBeingCrowned: 'ROYAL CARE',
+    theRitualOfBeingCrowned: 'THE RITUAL OF BEING <br>CROWNED',
     heroSubtitle:
       'Tiara redefines self-care as a quiet ceremony, where beauty, balance, and authenticity meet.',
 
     // About/Ritual Section
-    theRitualOfBeingCrownedTitle: 'ROYAL CARE',
+    theRitualOfBeingCrownedTitle: 'THE RITUAL OF BEING CROWNED',
     aboutRitualText:
       'Tiara Beauty is a Saudi-born beauty brand where beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, we create experiences that honor mind, body, and spirit, offering beauty that is felt as much as it is seen. Evolving from a highly regarded beauty studio and spa in Al Khobar, we blend global standards with cultural pride, delivering expert-led services that prioritize long-term care over fast trends.',
     viewMore: 'VIEW more',
@@ -110,7 +110,7 @@ const translations = {
       'Tiara Beauty is a Saudi-born beauty brand where beauty is not a performance, but a considered experience. Rooted in intentional care, technical expertise, and emotional intelligence, we create experiences that honor the mind, body, and spirit, offering beauty that is felt as deeply as it is seen. Evolving from a highly regarded beauty studio and spa in Al Khobar, Tiara blends global standards with cultural pride. Our expert-led services prioritize long-term care, focusing on lasting well-being rather than fleeting trends.',
     theRootOfOurIdentity: 'THE ROOT OF OUR IDENTITY',
     rootOfIdentityText:
-      'The banana tree tells our origin story. Rooted in local courtyards, it represents continuity, care, and quiet rituals passed down through generations. We chose the banana leaf as our mark to reflect a belief that beauty is cultivated with intention and never rushed. At our core, we stand for quiet confidence and modern sovereignty, where self-care becomes a meaningful experience and personal well-being is treated with deep respect.',
+      'The banana tree tells our origin story. Rooted in local courtyards, it represents continuity, care, and quiet rituals passed down through generations. We chose the banana leaf as our mark to reflect a belief that beauty is cultivated with intention and never rushed. At our core, we stand for quiet confidence and modern sovereignty, where self-care becomes a quiet, care-filled experience.',
     meetTheTiaraArtisans: 'Meet the Tiara Artisans',
     artisansDescription:
       'Behind every Tiara experience is a team of passionate artisans, stylists, therapists, and beauty specialists, dedicated to the art of care. Each one embodies our values: calm, intentional, nurturing, and culturally rooted.',
@@ -123,7 +123,7 @@ const translations = {
     founderMessageGreeting:
       'To the Tiara Family, our Valued Guests, Partners, and the Beauty Community,',
     founderMessage1:
-      "I built Tiara on the belief that empowered women create extraordinary things and leave a word of legacy, a word of impact.",
+      'I built Tiara on the belief that empowered women create extraordinary things and leave a word of legacy — a word of impact.',
     founderMessage2:
       'What began during COVID with just two team members has grown into a global force of over 50 professionals from more than 19 different nationalities, all speaking one language, the language of beauty.',
     founderMessage3:
@@ -161,7 +161,7 @@ const translations = {
     teamQuote26: '"Slay the day: one set at a time."',
 
     // Contact Page
-    whereBeautyMeetsYou: 'Where Beauty <br>Meets You',
+    whereBeautyMeetsYou: 'Tiara — Where Beauty Meets You',
     findTiarasSanctuaries:
       "Find Tiara's sanctuaries around the Kingdom, each crafted with calm, elegance, and sensory harmony.",
     tiaraBeautyStudio: 'TIARA BEAUTY STUDIO',
