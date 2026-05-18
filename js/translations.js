@@ -13,12 +13,12 @@ const translations = {
 
     // Hero Section
     beautyAsRitual: 'BEAUTY AS RITUAL',
-    theRitualOfBeingCrowned: 'THE RITUAL OF BEING <br>CROWNED',
+    theRitualOfBeingCrowned: 'ROYAL CARE',
     heroSubtitle:
       'Tiara redefines self-care as a quiet ceremony, where beauty, balance, and authenticity meet.',
 
     // About/Ritual Section
-    theRitualOfBeingCrownedTitle: 'THE RITUAL OF BEING CROWNED',
+    theRitualOfBeingCrownedTitle: 'ROYAL CARE',
     aboutRitualText:
       'Tiara Beauty is a Saudi-born beauty brand where beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, we create experiences that honor mind, body, and spirit, offering beauty that is felt as much as it is seen. Evolving from a highly regarded beauty studio and spa in Al Khobar, we blend global standards with cultural pride, delivering expert-led services that prioritize long-term care over fast trends.',
     viewMore: 'VIEW more',
@@ -63,19 +63,19 @@ const translations = {
     beautyStudio: 'BEAUTY STUDIO',
     spa: 'SPA',
     nails: 'NAILS',
-    styling: 'STYLING',
+    styling: 'HAIR',
     lightFilledSanctuary: 'LIGHT-FILLED SANCTUARY',
     facialSpaceDescription:
       'Our facial treatment space welcomes you with abundant natural light streaming through large windows. The carefully organized shelves display our premium products, while mirrors reflect the serene atmosphere—a corner where renewal and radiance meet.',
-    nailsSpaceTitle: 'NAILS SANCTUARY',
+    nailsSpaceTitle: 'NAILS WORLD',
     nailsSpaceDescription:
-      'Our nails sanctuary welcomes you with abundant natural light streaming through large windows. The carefully organized space displays our premium nail care products, while mirrors reflect the serene atmosphere a corner where beauty and precision meet.',
-    intimateElegance: 'INTIMATE ELEGANCE',
+      'Elegance begins in the details. In a calm and comfortable setting, we offer a complete nail care experience that blends precision, cleanliness, and refined touches. From everyday nail care to modern and elegant designs, our team works with expertise to give you a polished look that reflects your beauty and attention to detail.',
+    intimateElegance: 'HAIRSTYLES THAT REFLECT YOUR BEAUTY',
     stylingSpaceDescription:
-      'In our styling lounge, light wooden chairs surround a central table. The soft, intimate lighting creates a welcoming atmosphere where conversations flow and personal style is discovered. Every detail invites you to pause and feel at home.',
+      'In a calm and comfortable setting, our hair studio offers the latest hairstyles and treatments by professional specialists from Russia, Africa, and the Arab world — with diverse expertise and refined touches that give you an elegant look and a memorable experience in every detail.',
     sereneHorizons: 'SERENE HORIZONS',
     spaSpaceDescription:
-      'Our spa relaxation area offers comfortable recliners in a serene setting designed for deep rest. Soft lighting and a calm, intimate atmosphere create a tranquil corner where you can truly unwind. Every detail, from the plush seating to the hushed ambiance invites you to let go and find perfect peace.',
+      'Enjoy a complete relaxation experience at Tiara Spa, featuring a jacuzzi, sauna, Moroccan bath, and private massage rooms designed to offer the highest levels of comfort and tranquility. Massage and treatment services are delivered by elite professionals from Thailand, with high expertise and refined touches to give you a luxurious experience of care and relaxation in every detail.',
 
     // Products Section
     ourProducts: 'OUR PRODUCTS',
@@ -123,11 +123,11 @@ const translations = {
     founderMessageGreeting:
       'To the Tiara Family, our Valued Guests, Partners, and the Beauty Community,',
     founderMessage1:
-      "I built Tiara on the belief that empowered women create extraordinary things and leave legacies that redefine what's possible.",
+      "I built Tiara on the belief that empowered women create extraordinary things and leave a word of legacy, a word of impact.",
     founderMessage2:
-      'What began during COVID with just two team members has grown into a global force of over 50 professionals from 19+ nationalities, all speaking one language, the language of beauty.',
+      'What began during COVID with just two team members has grown into a global force of over 50 professionals from more than 19 different nationalities, all speaking one language, the language of beauty.',
     founderMessage3:
-      "At Tiara, we don't follow trends; we set standards, crafting every experience as a crown jewel shaped by purpose and precision. Tiara is a Saudi-made brand reflecting the ambition of Vision 2030, excellence, innovation, and global impact. Welcome to the beauty empire I created for you.",
+      "At Tiara, we don't follow trends — we create our own standards. Every experience we craft is a jewel of precision. Tiara is a Saudi-made brand reflecting the ambition of Vision 2030, excellence, innovation, and global impact. Welcome to the beauty empire I created for you.",
     founderMessageSignoff: 'With heartfelt pride,',
     founderMessageRole: 'CEO & Founder of Tiara Beauty',
     teamSaraRole: 'General Manager — "Beauty Led by Vision & Empowerment"',
@@ -147,7 +147,7 @@ const translations = {
     teamQuote12: '"Relaxation Expert"',
     teamQuote13: '"Create an idea. Decide. Act"',
     teamQuote14: '"Care you can feel"',
-    teamQuote15: '"Starring: perfect nails"',
+    teamQuote15: '"Perfect Nails"',
     teamQuote16: '"You are at the right place..."',
     teamQuote17: '"Lash first, ask questions later"',
     teamQuote18: '"Booked, busy, polishing"',
@@ -204,12 +204,12 @@ const translations = {
 
     // Hero Section
     beautyAsRitual: 'الجمال كلحظة خاصة',
-    theRitualOfBeingCrowned: 'لحظة التتويج',
+    theRitualOfBeingCrowned: 'العناية الملكية',
     heroSubtitle:
       'في تيارا، نعيد تعريف العناية الذاتية كلحظة هادئة، تلتقي فيها مشاعر الجمال، والتوازن، والأصالة.',
 
     // About/Ritual Section
-    theRitualOfBeingCrownedTitle: 'لحظة التتويج',
+    theRitualOfBeingCrownedTitle: 'العناية الملكية',
     aboutRitualText:
       'تيارا بيوتي علامة جمال سعودية، حيث لا يُقدَّم الجمال كأداء، بل كتجربة مقصودة. نؤمن بعناية واعية، وخبرة احترافية، وذكاء عاطفي، لنبتكر تجارب تُكرّم العقل والجسد والروح، وتقدّم جمالًا يُشعَر به بقدر ما يُرى. انطلقت تيارا من استوديو وسبا مميّز في الخبر، لتجمع بين المعايير العالمية والهوية الثقافية، وتقدّم خدمات متخصّصة تضع العناية طويلة الأمد فوق الصيحات السريعة.',
     viewMore: 'عرض المزيد',
@@ -254,19 +254,19 @@ const translations = {
     beautyStudio: 'استوديو الجمال',
     spa: 'السبا',
     nails: 'الأظافر',
-    styling: 'التصفيف',
+    styling: 'الشعر',
     lightFilledSanctuary: 'ملاذ مليء بالضوء',
     facialSpaceDescription:
       'ترحب بنا مساحة علاج الوجه لدينا بضوء طبيعي وفير يتدفق عبر نوافذ كبيرة. تعرض الرفوف المنظمة بعناية منتجاتنا المميزة، بينما تعكس المرايا الجو الهادئ—ركن حيث يلتقي التجديد والإشراق.',
-    nailsSpaceTitle: 'ملاذ الأظافر',
+    nailsSpaceTitle: 'عالم الأظافر',
     nailsSpaceDescription:
-      'يستقبلكِ ملاذ الأظافر لدينا بإضاءة طبيعية غامرة تنساب عبر النوافذ الواسعة. المساحة المصمّمة بعناية تعرض منتجات العناية الفاخرة بالأظافر، بينما تعكس المرايا أجواءً هادئة في ركنٍ تلتقي فيه الدقّة مع الجمال.',
-    intimateElegance: 'أناقة هادئة',
+      'أناقة تبدأ من التفاصيل. في أجواء هادئة ومريحة، نقدم تجربة عناية متكاملة تجمع بين الدقة، النظافة، واللمسات الراقية. من العناية اليومية بالأظافر إلى التصاميم العصرية والأنيقة، يعمل فريقنا باحترافية ليمنحك إطلالة مرتبة تعكس جمالك واهتمامك بأدق التفاصيل.',
+    intimateElegance: 'تسريحات تعكس جمالك',
     stylingSpaceDescription:
-      'في ركن التصفيف لدينا، تحيط كراسي خشبية فاتحة بطاولة مركزية. وتخلق الإضاءة الناعمة أجواءً دافئة ومرحِّبة، حيث تنساب الأحاديث ويُكتشف الأسلوب الشخصي. كل تفصيلة تدعوكِ للتوقّف قليلًا والشعور وكأنكِ في منزلك.',
+      'في أجواء هادئة ومريحة، يقدم استوديو الشعر لدينا أحدث التسريحات والعنايات على يد أخصائيات محترفات من روسيا، أفريقيا، والدول العربية، بخبرات متنوعة ولمسات احترافية تمنحك إطلالة أنيقة وتجربة مميزة بكل تفاصيلها.',
     sereneHorizons: 'آفاق هادئة',
     spaSpaceDescription:
-      'توفّر منطقة الاسترخاء في السبا مقاعد مريحة ضمن أجواء هادئة صُمِّمت للراحة العميقة. وتخلق الإضاءة الناعمة مع الأجواء الهادئة مساحة ساكنة تمنحكِ فرصة حقيقية للاسترخاء. من المقاعد الوثيرة إلى الهدوء المحيط، كل تفصيلة تدعوكِ للتخلّي عن التوتر والعثور على سلامٍ تام.',
+      'استمتعي بتجربة استرخاء متكاملة في تيارا سبا، حيث تضم منطقة السبا جاكوزي، ساونا، حمام مغربي، وغرف مساج خاصة صُممت لتمنحك أقصى درجات الراحة والهدوء. تُقدَّم خدمات المساج والعلاجات على يد نخبة من الأخصائيات المحترفات من تايلند، بخبرة عالية ولمسات احترافية تمنحك تجربة فاخرة من العناية والاسترخاء بكل تفاصيلها.',
 
     // Products Section
     ourProducts: 'منتجاتنا',
@@ -296,12 +296,12 @@ const translations = {
     close: 'إغلاق',
 
     // About Page
-    aboutTiaraBeauty: 'عن تيارا بيوتي',
+    aboutTiaraBeauty: 'عن تيارا للتجميل',
     aboutPageIntro:
       'تيارا بيوتي علامة جمال سعودية، حيث لا يُقدَّم الجمال كأداء، بل كتجربة واعية ومقصودة. ننطلق من عناية مدروسة، وخبرة احترافية، وذكاء عاطفي لنبتكر تجارب تُكرّم العقل والجسد والروح، وتقدّم جمالًا يُشعَر به بقدر ما يُرى. تطوّرت تيارا من استوديو وسبا يحظيان بتقدير واسع في الخبر، لتجمع بين المعايير العالمية والاعتزاز بالهوية الثقافية، وتقدّم خدمات يقودها خبراء، تركّز على العناية طويلة الأمد بدلًا من الانجراف خلف الصيحات السريعة.',
     theRootOfOurIdentity: 'جذور هويتنا',
     rootOfIdentityText:
-      'تحكي شجرة الموز قصّة بدايتنا. بجذورها الممتدة في ساحات البيوت المحلية، تعبّر عن الاستمرارية، والعناية، والطقوس الهادئة التي توارثتها الأجيال. اخترنا ورقة الموز كرمز لنا، لتجسّد إيماننا بأن الجمال يُزرَع بقصد، ويُمنَح وقته دون استعجال. في جوهرنا، نمثّل الثقة الهادئة والسيادة المعاصرة، حيث تتحوّل العناية الذاتية إلى تجربة ذات معنى، ويُعامَل الاهتمام بالرفاه الشخصي بكل تقدير واحترام.',
+      'تحكي شجرة الموز قصّة بدايتنا. بجذورها الممتدة في ساحات البيوت المحلية، تعبّر عن الاستمرارية، والعناية، والطقوس الهادئة التي توارثتها الأجيال. اخترنا ورقة الموز كرمز لنا، لتجسّد إيماننا بأن الجمال يُزرَع بقصد، ويُمنَح وقته دون استعجال. في جوهرنا، نمثّل الثقة الهادئة والسيادة المعاصرة، حيث تتحوّل العناية الذاتية إلى تجربة ذات معنى، حيث تصبح العناية بالنفس تجربة هادئة ومليئة بالاهتمام.',
     meetTheTiaraArtisans: 'تعرّفي على صُنّاع تيارا',
     artisansDescription:
       'خلف كل تجربة في تيارا فريق من الحرفيين، والمصفّفين، والمعالجين، وخبراء الجمال، يعملون بشغف ويكرّسون خبرتهم لفن العناية. كل فرد منهم يجسّد قيمنا في الهدوء، والعناية المقصودة، والاحتواء، والارتباط بالجذور الثقافية.',
@@ -310,14 +310,14 @@ const translations = {
     teamPageTitle: 'فريقنا — تيارا بيوتي',
 
     // Founder's Message (About Page)
-    founderMessageTitle: 'رسالة من مؤسستنا',
+    founderMessageTitle: 'رسالة من المؤسس',
     founderMessageGreeting: 'إلى عائلة تيارا، ضيوفنا الكرام، شركاؤنا، ومجتمع الجمال،',
     founderMessage1:
-      'بنيت تيارا على الإيمان بأن المرأة المُتمكّنة تخلق أشياء استثنائية وتترك إرثاً يعيد تعريف الممكن.',
+      'بنيت تيارا على الإيمان بأن المرأة المتمكنة تخلق أشياء استثنائية وتترك كلمة إرثاً بكلمة أثر.',
     founderMessage2:
-      'ما بدأ خلال جائحة كوفيد بعضوَي فريق فقط نما إلى قوة عالمية من أكثر من 50 محترفاً من 19+ جنسية، يتحدثون لغة واحدة، لغة الجمال.',
+      'ما بدأ خلال جائحة كوفيد بعضوَي فريق فقط نما إلى قوة عالمية من أكثر من 50 محترفاً من اكثر من ١٩ جنسية مختلفة، يتحدثون لغة واحدة، لغة الجمال.',
     founderMessage3:
-      'في تيارا، لا نتبع الموضات؛ نحن نضع المعايير، صانعين كل تجربة كجوهرة تاج يُشكّلها الغرض والدقة. تيارا علامة سعودية تعكس طموح رؤية 2030 والتميز والابتكار والأثر العالمي. مرحباً بكم في إمبراطورية الجمال التي أعددتها لكم.',
+      'في تيارا، لا نتبع الموضات، نحن نصنع معاييرها. كل تجربة نشكلها كجوهرة بمنتهى الدقة. تيارا علامة سعودية تعكس طموح رؤية 2030 والتميز والابتكار والأثر العالمي. مرحباً بكم في إمبراطورية الجمال التي أعددتها لكم.',
     founderMessageSignoff: 'بفخر من القلب،',
     founderMessageRole: 'الرئيس التنفيذي ومؤسسة تيارا للجمال',
     teamSaraRole: 'المديرة العامة — «الجمال بقيادة الرؤية والتمكين»',
@@ -337,7 +337,7 @@ const translations = {
     teamQuote12: '«خبيرة الاسترخاء»',
     teamQuote13: '«أنشئي فكرة. قرّري. نفّذي»',
     teamQuote14: '«عناية تُشعَر بها»',
-    teamQuote15: '«بطولة: أظافر مثالية»',
+    teamQuote15: '«أظافر مثالية»',
     teamQuote16: '«أنتِ في المكان الصحيح...»',
     teamQuote17: '«رموش أولاً، الأسئلة لاحقاً»',
     teamQuote18: '«حجوزات، انشغال، تلميع»',
@@ -351,7 +351,7 @@ const translations = {
     teamQuote26: '«تألقي اليوم: مجموعة تلو الأخرى.»',
 
     // Contact Page
-    whereBeautyMeetsYou: 'حيث يلتقي الجمال<br>بك',
+    whereBeautyMeetsYou: 'تيارا حيث يلتقي الجمال',
     findTiarasSanctuaries:
       'اكتشفي ملاذات تيارا في جميع أنحاء المملكة، كل منها مصمم بالهدوء والأناقة والانسجام الحسي.',
     tiaraBeautyStudio: 'استوديو تيارا للجمال',
