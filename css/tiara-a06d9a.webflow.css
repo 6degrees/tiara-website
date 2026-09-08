@@ -2040,6 +2040,12 @@ html.rtl .partners-logos {
   overflow: hidden;
 }
 
+/* Keep all service cards flush at the same level: the hover overlay spans the
+   full card, so any top padding makes it sit higher than adjacent images */
+.product-list-item-link.service-item {
+  padding-top: 0;
+}
+
 .service-overlay {
   position: absolute;
   top: 0;
@@ -5240,6 +5246,13 @@ html[dir="rtl"] .image-tab-text-group:not(.founder-message-group),
 html.rtl .image-tab-text-group:not(.founder-message-group) {
   text-align: center;
   align-items: center;
+}
+
+/* Arabic: the philosophy section layout stays LTR (see .image-tab above), but the
+   text itself must flow RTL so punctuation lands at the end of each line */
+html[dir="rtl"] .image-tab-text-group,
+html.rtl .image-tab-text-group {
+  direction: rtl;
 }
 
 html[dir="rtl"] .image-tab-text-group:not(.founder-message-group) .text--body-large,

@@ -69,13 +69,13 @@ const translations = {
       'Our facial treatment space welcomes you with abundant natural light streaming through large windows. The carefully organized shelves display our premium products, while mirrors reflect the serene atmosphere—a corner where renewal and radiance meet.',
     nailsSpaceTitle: 'NAILS WORLD',
     nailsSpaceDescription:
-      'Elegance begins in the details. In a calm and comfortable setting, we offer a complete nail care experience that blends precision, cleanliness, and refined touches. From everyday nail care to modern and elegant designs, our team works with expertise to give you a polished look that reflects your beauty and attention to detail.',
+      'Elegance begins in the details.<br>In a calm and comfortable setting, we offer a complete nail care experience that blends precision, cleanliness, and refined touches.<br>From everyday nail care to modern and elegant designs, our team works with expertise to give you a polished look that reflects your beauty and attention to detail.',
     intimateElegance: 'HAIRSTYLES THAT REFLECT YOUR BEAUTY',
     stylingSpaceDescription:
-      'In a calm and comfortable setting, our hair studio offers the latest hairstyles and treatments by professional specialists from Russia, Africa, and the Arab world — with diverse expertise and refined touches that give you an elegant look and a memorable experience in every detail.',
+      'In a calm and comfortable setting, our hair studio offers the latest hairstyles and treatments by professional specialists from Russia, Africa, and the Arab world.<br>With diverse expertise and refined touches, we give you an elegant look and a memorable experience in every detail.',
     sereneHorizons: 'SERENE HORIZONS',
     spaSpaceDescription:
-      'Enjoy a complete relaxation experience at Tiara Spa, featuring a jacuzzi, sauna, Moroccan bath, and private massage rooms designed to offer the highest levels of comfort and tranquility. Massage and treatment services are delivered by elite professionals from Thailand, with high expertise and refined touches to give you a luxurious experience of care and relaxation in every detail.',
+      'Enjoy a complete relaxation experience at Tiara Spa, featuring a jacuzzi, sauna, Moroccan bath, and private massage rooms designed to offer the highest levels of comfort and tranquility.<br>Massage and treatment services are delivered by elite professionals from Thailand, with high expertise and refined touches to give you a luxurious experience of care and relaxation in every detail.',
 
     // Products Section
     ourProducts: 'OUR PRODUCTS',
@@ -260,13 +260,13 @@ const translations = {
       'ترحب بنا مساحة علاج الوجه لدينا بضوء طبيعي وفير يتدفق عبر نوافذ كبيرة. تعرض الرفوف المنظمة بعناية منتجاتنا المميزة، بينما تعكس المرايا الجو الهادئ—ركن حيث يلتقي التجديد والإشراق.',
     nailsSpaceTitle: 'عالم الأظافر',
     nailsSpaceDescription:
-      'أناقة تبدأ من التفاصيل. في أجواء هادئة ومريحة، نقدم تجربة عناية متكاملة تجمع بين الدقة، النظافة، واللمسات الراقية. من العناية اليومية بالأظافر إلى التصاميم العصرية والأنيقة، يعمل فريقنا باحترافية ليمنحك إطلالة مرتبة تعكس جمالك واهتمامك بأدق التفاصيل.',
+      'أناقة تبدأ من التفاصيل.<br>في أجواء هادئة ومريحة، نقدم تجربة عناية متكاملة تجمع بين الدقة، النظافة، واللمسات الراقية.<br>من العناية اليومية بالأظافر إلى التصاميم العصرية والأنيقة، يعمل فريقنا باحترافية ليمنحك إطلالة مرتبة تعكس جمالك واهتمامك بأدق التفاصيل.',
     intimateElegance: 'تسريحات تعكس جمالك',
     stylingSpaceDescription:
-      'في أجواء هادئة ومريحة، يقدم استوديو الشعر لدينا أحدث التسريحات والعنايات على يد أخصائيات محترفات من روسيا، أفريقيا، والدول العربية، بخبرات متنوعة ولمسات احترافية تمنحك إطلالة أنيقة وتجربة مميزة بكل تفاصيلها.',
+      'في أجواء هادئة ومريحة، يقدم استوديو الشعر لدينا أحدث التسريحات والعنايات على يد أخصائيات محترفات من روسيا، أفريقيا، والدول العربية.<br>بخبرات متنوعة ولمسات احترافية، نمنحك إطلالة أنيقة وتجربة مميزة بكل تفاصيلها.',
     sereneHorizons: 'آفاق هادئة',
     spaSpaceDescription:
-      'استمتعي بتجربة استرخاء متكاملة في تيارا سبا، حيث تضم منطقة السبا جاكوزي، ساونا، حمام مغربي، وغرف مساج خاصة صُممت لتمنحك أقصى درجات الراحة والهدوء. تُقدَّم خدمات المساج والعلاجات على يد نخبة من الأخصائيات المحترفات من تايلند، بخبرة عالية ولمسات احترافية تمنحك تجربة فاخرة من العناية والاسترخاء بكل تفاصيلها.',
+      'استمتعي بتجربة استرخاء متكاملة في تيارا سبا، حيث تضم منطقة السبا جاكوزي، ساونا، حمام مغربي، وغرف مساج خاصة صُممت لتمنحك أقصى درجات الراحة والهدوء.<br>تُقدَّم خدمات المساج والعلاجات على يد نخبة من الأخصائيات المحترفات من تايلند، بخبرة عالية ولمسات احترافية تمنحك تجربة فاخرة من العناية والاسترخاء بكل تفاصيلها.',
 
     // Products Section
     ourProducts: 'منتجاتنا',
