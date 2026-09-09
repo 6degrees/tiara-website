@@ -1168,6 +1168,17 @@ blockquote {
 .home-section-01 {
   width: 100%;
   height: 100svh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Full-page hero video: soft scrim keeps overlay text readable */
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(#00000080, #0000 18%), #00000033;
+  pointer-events: none;
 }
 
 .home-section-container {
@@ -1179,19 +1190,13 @@ blockquote {
   width: 100%;
   height: 100%;
   display: grid;
+  position: relative;
+  z-index: 2;
 }
 
 .home-section-01-left {
   position: relative;
   overflow: hidden;
-}
-
-.home-section-01-left::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(#00000080, #0000 10%);
-  z-index: 1;
 }
 
 .home-section-01-left .home-section-01-info {
@@ -1211,15 +1216,6 @@ video.hero-video {
   height: 100% !important;
   object-fit: cover !important;
   z-index: 0;
-}
-
-.home-section-01-blur {
-  -webkit-backdrop-filter: blur(250px);
-  backdrop-filter: blur(250px);
-  background-color: #ffffff1a;
-  position: absolute;
-  inset: 0%;
-  z-index: 1;
 }
 
 .header {
@@ -1841,18 +1837,48 @@ html.rtl .partners-logos {
   height: 82px;
 }
 
+/* Products carousel navigation arrows */
+.products-carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.products-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--brown);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+}
+
+.products-arrow:hover:not(:disabled) {
+  background-color: rgba(63, 40, 35, 0.08);
+}
+
+.products-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.products-arrow-left img {
+  transform: scaleX(-1);
+}
+
 .partner-logo-img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: brightness(0);
-  transition: filter 0.25s ease, opacity 0.25s ease;
-}
-
-.partner-logo:hover .partner-logo-img {
-  filter: brightness(0);
+  transition: opacity 0.25s ease;
 }
 
 .partner-logo-placeholder {
@@ -2883,7 +2909,7 @@ html.rtl .product-name {
 
 .menu-left {
   text-align: center;
-  background-image: url('../images/Visual-1.png');
+  background-image: url('../images/Visual-1.webp');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3016,7 +3042,7 @@ html.rtl .menu-text {
 }
 
 .about-section-01 {
-  background-image: url('../images/contact.png') !important;
+  background-image: url('../images/contact.webp') !important;
   background-position: 50%;
   background-size: cover;
   background-attachment: scroll;
@@ -3046,20 +3072,6 @@ html.rtl .menu-text {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
-}
-
-.material-flex .zoom-image,
-.material-flex img,
-.material-flex .zoom-wrap img {
-  filter: grayscale(100%) !important;
-  -webkit-filter: grayscale(100%) !important;
-  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
-}
-
-.material-flex .zoom-wrap:hover .zoom-image,
-.material-flex .zoom-wrap:hover img {
-  filter: grayscale(0%) !important;
-  -webkit-filter: grayscale(0%) !important;
 }
 
 .material-flex--about-three {
@@ -3370,7 +3382,7 @@ html.rtl .menu-text {
 }
 
 .store-section-01 {
-  background-image: linear-gradient(#0003, #0003), url('../images/contact.png') !important;
+  background-image: linear-gradient(#0003, #0003), url('../images/contact.webp') !important;
   background-position: 0 0, 50%;
   background-size: auto, cover;
   background-attachment: scroll, scroll;
@@ -3794,18 +3806,6 @@ html.rtl .menu-text {
 
   .home-section-01-right {
     background-image: none;
-  }
-
-  .home-section-01-right::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(#00000080, #0000 20%);
-    z-index: 1;
-  }
-
-  .home-section-01-blur {
-    display: none;
   }
 
   .header-container {
@@ -4713,10 +4713,6 @@ html.rtl .menu-text {
 }
 
 @media screen and (max-width: 479px) {
-  .home-section-01-right {
-    background-image: linear-gradient(#00000080, #0000 20%), url('../images/Visual-1.png');
-  }
-
   .product-list {
     grid-template-columns: 1fr;
     width: 100%;

@@ -8,7 +8,7 @@
   <meta property="og:url" content="https://tiarabeauty.sa/">
   <meta property="og:title" content="Tiara Beauty — Beauty as Ritual | Al Khobar">
   <meta property="og:description" content="Saudi-born beauty brand in Al Khobar. Beauty as ritual: refined studio &amp; spa, lash extensions, hair styling, and expert-led treatments.">
-  <meta property="og:image" content="https://6degrees.github.io/tiara-website/images/tiara-og-new.png">
+  <meta property="og:image" content="https://tiarabeauty.sa/images/tiara-og-new.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/png">
@@ -21,7 +21,7 @@
   <meta name="twitter:creator" content="@tiarabeauty">
   <meta name="twitter:title" content="Tiara Beauty — Beauty as Ritual | Al Khobar">
   <meta name="twitter:description" content="Saudi-born beauty brand in Al Khobar. Beauty as ritual: refined studio &amp; spa and expert-led treatments.">
-  <meta name="twitter:image" content="https://6degrees.github.io/tiara-website/images/tiara-og-new.png">
+  <meta name="twitter:image" content="https://tiarabeauty.sa/images/tiara-og-new.png">
   <meta name="twitter:image:alt" content="Tiara Beauty — Beauty as Ritual">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#efe0cb">
@@ -29,7 +29,7 @@
   <meta name="generator" content="Webflow">
   <!-- Base URL for GitHub Pages (only on GitHub Pages, not localhost) -->
   <script>
-    if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    if (window.location.hostname.endsWith('github.io')) {
       var base = document.createElement('base');
       base.href = '/tiara-website/';
       document.head.insertBefore(base, document.head.firstChild);
@@ -61,9 +61,9 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.ico?v=2" rel="shortcut icon" type="image/x-icon">
-  <link href="images/favicon-192.png?v=2" rel="icon" type="image/png" sizes="192x192">
-  <link href="images/apple-touch-icon.png?v=2" rel="apple-touch-icon" sizes="180x180">
+  <link href="images/favicon.ico?v=3" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon-192.png?v=3" rel="icon" type="image/png" sizes="192x192">
+  <link href="images/apple-touch-icon.png?v=3" rel="apple-touch-icon" sizes="180x180">
     <!-- Preload critical resources -->
   <link rel="preload" href="fonts/Houstiq.otf" as="font" type="font/otf" crossorigin>
   <link rel="preload" href="fonts/Inter_18pt-Regular.ttf" as="font" type="font/ttf" crossorigin>
@@ -136,7 +136,7 @@ img {
     "description": "Tiara Beauty is a Saudi-born beauty brand where beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, Tiara creates experiences that honor the mind, body, and spirit—offering beauty that is felt as much as it is seen.",
     "url": "https://tiarabeauty.sa",
     "logo": "https://tiarabeauty.sa/images/Tiara-Logo.png",
-    "image": "https://tiarabeauty.sa/images/Visual-1.png",
+    "image": "https://tiarabeauty.sa/images/Visual-1.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "6386 Prince Faisal Bin Fahd Road, Al Hizam Al Akhdar",
@@ -151,10 +151,9 @@ img {
       "name": "Al Khobar"
     },
     "telephone": "+966 50 855 3755",
-    "email": "info@tiara.com",
+    "email": "info@tiarabeauty.sa",
     "sameAs": [
-      "https://www.instagram.com/tiarabeauty",
-      "https://www.facebook.com/tiarabeauty"
+      "https://www.instagram.com/tiarabeauty.sa"
     ],
     "openingHoursSpecification": [
       {
@@ -249,6 +248,10 @@ img {
             <div class="menu-text" data-i18n="aboutTiara">About Tiara</div>
             <div class="menu-text" data-i18n="aboutTiara">About Tiara</div>
           </a>
+          <a href="team.html" class="menu-link-text w-inline-block">
+            <div class="menu-text" data-i18n="team">Our Team</div>
+            <div class="menu-text" data-i18n="team">Our Team</div>
+          </a>
           <a data-w-id="3ec8e2e1-52f1-449a-bc76-07c36771a611" href="index.html#services" class="menu-link-text w-inline-block">
             <div class="menu-text" data-i18n="services">Services </div>
             <div class="menu-text" data-i18n="services">Services </div>
@@ -285,6 +288,10 @@ img {
             <div class="text-label" data-i18n="aboutTiara"><strong class="text-label">About Tiara</strong></div>
             <div class="line-line"></div>
           </a>
+          <a href="team.html" class="header-link w-inline-block">
+            <div class="text-label" data-i18n="team">Our Team</div>
+            <div class="line-line"></div>
+          </a>
           <a href="index.html#services" class="header-link w-inline-block">
             <div class="text-label" data-i18n="services">Services</div>
             <div class="line-line"></div>
@@ -311,19 +318,17 @@ img {
   <main id="main-content">
   <!-- Hero Section - Main landing section with background image and main heading -->
   <section data-w-id="f039517b-655e-1c32-c063-eaa661eb7077" style="opacity:0" class="home-section-01">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+      <source src="images/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-scrim"></div>
     <div class="home-section-container">
       <div class="home-section-01-left">
-        <video class="hero-video" autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
-          <source src="images/hero-video.mp4" type="video/mp4">
-        </video>
         <div class="home-section-01-info">
           <div class="text-label" data-i18n="copyrightHero">© Tiara 2025</div>
         </div>
       </div>
       <div class="home-section-01-right">
-        <video class="hero-video" autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
-          <source src="images/hero-video.mp4" type="video/mp4">
-        </video>
         <div data-w-id="076ce090-b3f5-008d-ad77-8292f09a784b" style="opacity:0;filter:blur(30px)" class="home-section-01-right-flex"><img src="images/Icon-.png" loading="lazy" alt="Tiara Symbol" class="symbol home">
           <div class="home-section-01-text-group">
           <div class="text-label" data-i18n="beautyAsRitual"><strong>BEAUTY AS RITUAL</strong></div>
@@ -340,7 +345,6 @@ img {
           <div class="text-label" data-i18n="heroSubtitle"><strong>Tiara redefines self-care as a quiet ceremony, where beauty, balance, and authenticity meet.</strong></div>
           </div>
         </div>
-        <div class="home-section-01-blur"></div>
       </div>
     </div>
   </section>
@@ -348,7 +352,7 @@ img {
   <section class="home-section-02">
     <div class="home-section-02-container">
       <div data-w-id="d7c9b38e-ff60-ba59-4755-676b1a61e5a1" class="home-section-02-text-group">
-        <h1 class="text--heading-01" data-i18n="theRitualOfBeingCrownedTitle">THE RITUAL OF BEING CROWNED</h1>
+        <h2 class="text--heading-01" data-i18n="theRitualOfBeingCrownedTitle">THE RITUAL OF BEING CROWNED</h2>
         <p class="text--body-large" data-i18n="aboutRitualText">Tiara Beauty is a Saudi-born beauty brand where beauty is not a performance, but a ritual. Rooted in intentional care, technical expertise, and emotional intelligence, we create experiences that honor mind, body, and spirit, offering beauty that is felt as much as it is seen. Evolving from a highly regarded beauty studio and spa in Al Khobar, we blend global standards with cultural pride, delivering expert-led services that prioritize long-term care over fast trends.</p>
         <a href="about.html" class="button-text w-inline-block">
           <div class="text-label" data-i18n="viewMore">VIEW more</div>
@@ -363,7 +367,7 @@ img {
   <!-- Services Section - Display of Tiara's service offerings -->
   <section id="services" class="home-section-03">
     <div class="home-section-03-title px-4">
-      <h1 class="text--heading-01" data-i18n="ourRitualServices"><strong>OUR RITUAL SERVICES</strong></h1>
+      <h2 class="text--heading-01" data-i18n="ourRitualServices"><strong>OUR RITUAL SERVICES</strong></h2>
     </div>
     <div class="product-list">
       <div data-w-id="caccc337-8d7c-4486-f9e8-932543e8e3cd" class="product-list-item-link service-item">
@@ -485,7 +489,7 @@ img {
               <div class="image-tab-inner-right">
                 <div class="text-label image-tab-title" data-i18n="beautyStudio"><strong>BEAUTY STUDIO</strong></div>
                 <div class="image-tab-text-group">
-                  <h1 class="text--heading-01" data-i18n="nailsSpaceTitle"><strong>NAILS SANCTUARY</strong></h1>
+                  <h2 class="text--heading-01" data-i18n="nailsSpaceTitle"><strong>NAILS SANCTUARY</strong></h2>
                   <p class="text--body-large" data-i18n="nailsSpaceDescription" data-i18n-html="true">Elegance begins in the details.<br>In a calm and comfortable setting, we offer a complete nail care experience that blends precision, cleanliness, and refined touches.<br>From everyday nail care to modern and elegant designs, our team works with expertise to give you a polished look that reflects your beauty and attention to detail.</p>
                 </div>
               </div>
@@ -497,7 +501,7 @@ img {
               <div class="image-tab-inner-right">
                 <div class="text-label image-tab-title" data-i18n="beautyStudio"><strong>BEAUTY STUDIO</strong></div>
                 <div class="image-tab-text-group">
-                  <h1 class="text--heading-01" data-i18n="intimateElegance">INTIMATE ELEGANCE</h1>
+                  <h2 class="text--heading-01" data-i18n="intimateElegance">INTIMATE ELEGANCE</h2>
                   <p class="text--body-large" data-i18n="stylingSpaceDescription" data-i18n-html="true">In a calm and comfortable setting, our hair studio offers the latest hairstyles and treatments by professional specialists from Russia, Africa, and the Arab world.<br>With diverse expertise and refined touches, we give you an elegant look and a memorable experience in every detail.</p>
                 </div>
               </div>
@@ -509,7 +513,7 @@ img {
               <div class="image-tab-inner-right">
                 <div class="text-label image-tab-title" data-i18n="spa"><strong>SPA</strong></div>
                 <div class="image-tab-text-group">
-                  <h1 class="text--heading-01" data-i18n="sereneHorizons">SERENE HORIZONS</h1>
+                  <h2 class="text--heading-01" data-i18n="sereneHorizons">SERENE HORIZONS</h2>
                   <p class="text--body-large" data-i18n="spaSpaceDescription" data-i18n-html="true">Enjoy a complete relaxation experience at Tiara Spa, featuring a jacuzzi, sauna, Moroccan bath, and private massage rooms designed to offer the highest levels of comfort and tranquility.<br>Massage and treatment services are delivered by elite professionals from Thailand, with high expertise and refined touches to give you a luxurious experience of care and relaxation in every detail.</p>
                 </div>
               </div>
@@ -523,7 +527,7 @@ img {
   <section id="products" class="home-section-06">
     <div class="home-section-06-container">
       <div id="w-node-b1061a20-e38b-33d1-3086-1b4d73e6f123-7af4bc3e" class="home-section-06-title">
-        <h1 class="text--heading-01" data-i18n="ourProducts"><strong>TIARA PRODUCTS</strong></h1>
+        <h2 class="text--heading-01" data-i18n="ourProducts"><strong>TIARA PRODUCTS</strong></h2>
       </div>
       <div id="w-node-e97c15a4-9367-acf1-9289-564e8e9d68c2-7af4bc3e" class="home-section-06-desc">
         <p class="text--body-large" data-i18n="productsDescription">Carefully curated lash products that extend the Tiara ritual into your daily routine. Each product is crafted with pure ingredients and intentional care.</p>
@@ -566,6 +570,10 @@ img {
             <div class="product-name" data-i18n="productTweezer">Tweezer</div>
           </div>
         </div>
+        <div class="products-carousel-nav">
+          <button type="button" class="products-arrow products-arrow-left" aria-label="Previous products"><img src="images/long-arrow-right.svg" loading="lazy" alt="" class="icon-12"></button>
+          <button type="button" class="products-arrow products-arrow-right" aria-label="Next products"><img src="images/long-arrow-right.svg" loading="lazy" alt="" class="icon-12"></button>
+        </div>
       </div>
     </div>
   </section>
@@ -580,6 +588,9 @@ img {
       <div id="w-node-a263df6f-82e0-d251-302a-4ac297bde220-97bde219" class="footer-link-group">
         <a href="about.html" class="footer-link w-inline-block">
           <div class="text-label" data-i18n="aboutTiara">About Tiara</div>
+        </a>
+        <a href="team.html" class="footer-link w-inline-block">
+          <div class="text-label" data-i18n="team">Our Team</div>
         </a>
         <a href="index.html#services" class="footer-link w-inline-block">
           <div class="text-label" data-i18n="services">Services</div>
@@ -619,6 +630,7 @@ img {
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/translations.js" type="text/javascript"></script>
   <script src="js/language-switcher.js" type="text/javascript"></script>
+  <script src="js/products-carousel.js" type="text/javascript"></script>
   <script>
     // Add scrolled class to header on scroll
     window.addEventListener('scroll', function() {
@@ -636,7 +648,14 @@ img {
       if (!tabContainer) return;
       var tabLinks = tabContainer.querySelectorAll('.w-tab-menu .w-tab-link');
       if (tabLinks.length === 0) return;
+      // Pause auto-rotation while the user is interacting with the tabs (WCAG 2.2.2)
+      var paused = false;
+      tabContainer.addEventListener('mouseenter', function() { paused = true; });
+      tabContainer.addEventListener('mouseleave', function() { paused = false; });
+      tabContainer.addEventListener('focusin', function() { paused = true; });
+      tabContainer.addEventListener('focusout', function() { paused = false; });
       setInterval(function() {
+        if (paused) return;
         var current = tabContainer.querySelector('.w-tab-menu .w-tab-link.w--current');
         var currentIndex = -1;
         for (var i = 0; i < tabLinks.length; i++) {

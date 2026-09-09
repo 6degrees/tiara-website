@@ -6,6 +6,7 @@ const translations = {
     menu: 'MENU',
     tiaraBrand: 'Tiara',
     aboutTiara: 'About Tiara',
+    team: 'Our Team',
     about: 'About',
     services: 'Services',
     products: 'Products',
@@ -190,13 +191,14 @@ const translations = {
       'You have the right to: access your personal information, request correction of inaccurate data, request deletion of your information, object to processing of your data, and withdraw consent for marketing communications. To exercise these rights, please contact us using the information provided below.',
     contactUs: 'Contact Us',
     privacyContactUs:
-      'If you have questions about this Privacy Policy or wish to exercise your rights, please contact us at:<br><br>Tiara Beauty<br>6386 Prince Faisal Bin Fahd Road<br>Al Hizam Al Akhdar, Al Khobar 34436<br>Email: info@tiara.com<br><br>Last updated: 2025',
+      'If you have questions about this Privacy Policy or wish to exercise your rights, please contact us at:<br><br>Tiara Beauty<br>6386 Prince Faisal Bin Fahd Road<br>Al Hizam Al Akhdar, Al Khobar 34436<br>Email: info@tiarabeauty.sa<br><br>Last updated: 2025',
   },
   ar: {
     // Navigation
     menu: 'القائمة',
     tiaraBrand: 'تيارا',
     aboutTiara: 'عن تيارا',
+    team: 'فريقنا',
     about: 'عن',
     services: 'الخدمات',
     products: 'المنتجات',
@@ -380,6 +382,6 @@ const translations = {
       'لديك الحق في: الوصول إلى معلوماتك الشخصية، وطلب تصحيح البيانات غير الدقيقة، وطلب حذف معلوماتك، والاعتراض على معالجة بياناتك، وسحب الموافقة على الاتصالات التسويقية. لممارسة هذه الحقوق، يرجى الاتصال بنا باستخدام المعلومات المقدمة أدناه.',
     contactUs: 'تواصلي معنا',
     privacyContactUs:
-      'إذا كان لديك أسئلة حول سياسة الخصوصية هذه أو ترغب في ممارسة حقوقك، يرجى الاتصال بنا على:<br><br>تيارا للجمال<br>6386 طريق الأمير فيصل بن فهد<br>الحزام الأخضر، الخبر 34436<br>البريد الإلكتروني: info@tiara.com<br><br>آخر تحديث: 2025',
+      'إذا كان لديك أسئلة حول سياسة الخصوصية هذه أو ترغب في ممارسة حقوقك، يرجى الاتصال بنا على:<br><br>تيارا للجمال<br>6386 طريق الأمير فيصل بن فهد<br>الحزام الأخضر، الخبر 34436<br>البريد الإلكتروني: info@tiarabeauty.sa<br><br>آخر تحديث: 2025',
   },
 };

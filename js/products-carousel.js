@@ -12,34 +12,22 @@
     }
 
     function updateArrowStates() {
-      const scrollLeft = carousel.scrollLeft;
-      const scrollWidth = carousel.scrollWidth;
-      const clientWidth = carousel.clientWidth;
+      // Works in both LTR and RTL: in RTL browsers report scrollLeft in [-max, 0]
+      const max = carousel.scrollWidth - carousel.clientWidth;
+      const isRTL = getComputedStyle(carousel).direction === 'rtl';
+      const minEdge = isRTL ? -max : 0;
+      const maxEdge = isRTL ? 0 : max;
 
-      // Disable left arrow if at the start
-      if (scrollLeft <= 0) {
-        leftArrow.disabled = true;
-      } else {
-        leftArrow.disabled = false;
-      }
-
-      // Disable right arrow if at the end
-      if (scrollLeft + clientWidth >= scrollWidth - 10) {
-        rightArrow.disabled = true;
-      } else {
-        rightArrow.disabled = false;
-      }
+      // Arrows move the viewport visually left/right regardless of direction
+      leftArrow.disabled = carousel.scrollLeft <= minEdge + 10;
+      rightArrow.disabled = carousel.scrollLeft >= maxEdge - 10;
     }
 
-    // Scroll function
+    // Scroll function (visual direction)
     function scrollProducts(direction) {
       const scrollAmount = carousel.clientWidth * 0.8; // Scroll 80% of visible width
-      const currentScroll = carousel.scrollLeft;
-      const targetScroll =
-        direction === 'left' ? currentScroll - scrollAmount : currentScroll + scrollAmount;
-
-      carousel.scrollTo({
-        left: targetScroll,
+      carousel.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth',
       });
     }

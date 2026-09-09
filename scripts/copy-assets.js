@@ -22,8 +22,8 @@ function copyDir(srcDir, destDir) {
 copyDir(path.join(src, 'fonts'), path.join(dist, 'fonts'));
 copyDir(path.join(src, 'images'), path.join(dist, 'images'));
 
-// Copy root static files
-['robots.txt', 'sitemap.xml'].forEach((file) => {
+// Copy root static files (CNAME keeps the GitHub Pages custom domain on deploys)
+['robots.txt', 'sitemap.xml', 'CNAME'].forEach((file) => {
   const filePath = path.join(src, file);
   if (fs.existsSync(filePath)) {
     fs.copyFileSync(filePath, path.join(dist, file));
