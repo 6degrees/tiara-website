@@ -6,7 +6,7 @@ alwaysApply: true
 
 ## Project Status: ✅ Complete & Stable
 
-**Last Updated**: December 30, 2025
+**Last Updated**: September 9, 2026
 
 ## Completed Features
 
@@ -57,7 +57,7 @@ alwaysApply: true
 - [x] Responsive navigation for mobile devices
 
 ### Brand Implementation
-- [x] Favicon updated to `images/favicon.ico`
+- [x] Favicon updated to transparent PNG (`images/favicon.png`)
 - [x] Brand messaging integrated throughout site
 - [x] Color consistency across all pages
 - [x] Typography hierarchy established
@@ -145,6 +145,11 @@ All core features have been implemented and are functioning correctly. The websi
 The project is ready for production deployment and maintenance.
 
 ## Change Log
+
+### September 9, 2026
+- Replaced site favicon with the leaf icon as a transparent PNG (`images/favicon.png`)
+- Updated `favicon-192.png` and `apple-touch-icon.png` from the same asset
+- Pointed all HTML pages at the PNG favicon
 
 ### December 30, 2025
 - Implemented bilingual (Arabic/English) and RTL support

@@ -6,13 +6,18 @@ alwaysApply: true
 
 ## Current Status
 
-**Last Updated**: December 30, 2025
+**Last Updated**: September 9, 2026
 
-The Tiara Beauty website is in a stable, functional state with all core features implemented. Recent work has focused on image updates, brand color implementation, and design refinements.
+The Tiara Beauty website is in a stable, functional state with all core features implemented. Most recent work was a favicon update to a transparent leaf PNG.
 
 ## Recent Changes
 
-### Image Updates (Most Recent)
+### Favicon (Most Recent)
+- ✅ Replaced favicon with the leaf icon as a transparent PNG (`images/favicon.png`)
+- ✅ Updated `favicon-192.png` and `apple-touch-icon.png` from the same asset
+- ✅ Pointed all HTML pages at the PNG favicon (`?v=4`)
+
+### Image Updates
 - ✅ Updated hero section to use `images/hero.png` (replaced Visual-2.png files)
 - ✅ Updated services section with unique images from `images/services/` directory
 - ✅ Updated products section with product images from `images/products/` directory
@@ -23,7 +28,7 @@ The Tiara Beauty website is in a stable, functional state with all core features
 ### Brand Implementation
 - ✅ Implemented brand color palette in CSS variables
 - ✅ Updated menu overlay text to use primary brand color (Velvet Cream)
-- ✅ Updated favicon to use `images/favicon.ico`
+- ✅ Updated favicon to use `images/favicon.png` (transparent leaf icon)
 
 ### Documentation
 - ✅ Enhanced project description with comprehensive technical details

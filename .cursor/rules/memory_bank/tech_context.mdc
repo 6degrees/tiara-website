@@ -189,7 +189,8 @@ Minimal custom JavaScript—most interactivity handled by Webflow interactions.
 - **JPG**: Photographs, team images
 - **WebP**: Optimized images (used for orla12 series)
 - **SVG**: Icons, simple graphics
-- **ICO**: Favicon
+- **PNG**: Favicon (`images/favicon.png`, transparent)
+- **ICO**: Legacy favicon fallback (`images/favicon.ico`)
 
 ### Image Organization
 
