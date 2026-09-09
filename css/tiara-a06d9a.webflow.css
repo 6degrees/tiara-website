@@ -1,6 +1,6 @@
 @font-face {
   font-family: Houstiq;
-  src: url('../fonts/Houstiq.otf') format("opentype");
+  src: url('../fonts/Houstiq.woff2') format("woff2"), url('../fonts/Houstiq.otf') format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Inter;
-  src: url('../fonts/Inter_18pt-Regular.ttf') format("truetype");
+  src: url('../fonts/Inter_18pt-Regular.woff2') format("woff2"), url('../fonts/Inter_18pt-Regular.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: Cairo;
-  src: url('../fonts/Cairo-Regular.ttf') format("truetype");
+  src: url('../fonts/Cairo-Regular.woff2') format("woff2"), url('../fonts/Cairo-Regular.ttf') format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: Cairo;
-  src: url('../fonts/Cairo-Medium.ttf') format("truetype");
+  src: url('../fonts/Cairo-Medium.woff2') format("woff2"), url('../fonts/Cairo-Medium.ttf') format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: Cairo;
-  src: url('../fonts/Cairo-SemiBold.ttf') format("truetype");
+  src: url('../fonts/Cairo-SemiBold.woff2') format("woff2"), url('../fonts/Cairo-SemiBold.ttf') format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: Cairo;
-  src: url('../fonts/Cairo-Bold.ttf') format("truetype");
+  src: url('../fonts/Cairo-Bold.woff2') format("woff2"), url('../fonts/Cairo-Bold.ttf') format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1876,6 +1876,7 @@ html.rtl .partners-logos {
   width: auto;
   height: auto;
   object-fit: contain;
+  filter: brightness(0);
   transition: opacity 0.25s ease;
 }
 
